@@ -7,7 +7,7 @@
 ## Modification du Layout :
 - Changement du champ email au niveau des coordonées en section avec un titre, email en bas et un bouton “Contactez moi” qui renvoie en bas de la page au formulaire. Validé par les professeurs lors du feedback.
 
-Screenshot du site :
+## Screenshot du site :
 
 ![](./img/screenshot-cv.png)
 
