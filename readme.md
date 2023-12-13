@@ -10,4 +10,3 @@
 ## Screenshot du site
 
 ![](./img/screenshot-cv.png)
-

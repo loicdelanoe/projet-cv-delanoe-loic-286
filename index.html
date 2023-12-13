@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords"
+          content="Développement Web, développement, programmation, code, HTML, CSS, CSS3, JavaScript, CV, Étudiant, projets">
+    <meta name="description"
+          content="Étudiant passionné de web et de programmation, je suis à la recherche d'opportunités pour mettre en pratique mes compétences en HTML, CSS, JavaScript et plus encore. Découvrez mon parcours, mes projets et mes aspirations dans le domaine du développement web sur mon site CV.">
+    <meta name="author" content="Loïc Delanoë">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Space+Grotesk:wght@300;400;500&display=swap"
+          rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.jpg">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/inex.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Loïc D.</title>
+</head>
+<body>
+<header id="header">
+    <h1 class="hidden">Loïc Delanoë, Développeur web</h1>
+    <ul class="header-list">
+        <li>
+            <h2><a href="index.html">Loïc D.</a></h2>
+        </li>
+        <li>
+            <nav class="main-nav">
+                <h2 class="hidden">Navigation principale</h2>
+                <ul class="main-list">
+                    <li><a href="#header" title="Aller vers l'accueil">Accueil</a></li>
+                    <li class="dropdown-btn">À Propos
+                        <ul class="sub-list hidden">
+                            <li><a href="#coordonnees" class="main-nav-btn" title="Aller vers mes coordonnées">Coordonnées</a>
+                            </li>
+                            <li><a href="#myProfil" class="main-nav-btn" title="Aller vers mon profil">Mon Profil</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-btn">Formations
+                        <ul class="sub-list hidden">
+                            <li><a href="#" class="main-nav-btn" title="Aller vers mes coordonnées">Baccalauréat</a>
+                            </li>
+                            <li><a href="#" class="main-nav-btn" title="Aller vers mon profil">Économie</a></li>
+                            <li><a href="#" class="main-nav-btn" title="Aller vers mon profil">Web</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-btn">Compétences
+                        <ul class="sub-list hidden">
+                            <li><a href="#" class="main-nav-btn" title="Aller vers les compétences HTML">HTML</a></li>
+                            <li><a href="#" class="main-nav-btn" title="Aller vers les compétences CSS">CSS</a></li>
+                            <li><a href="#" class="main-nav-btn" title="Aller vers les compétences JavaScript">JavaScript</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="btn-list">
+                    <li><a href="#" class="cta secondary" title="Consulter mon blog">Blog</a></li>
+                    <li><a href="#footerContact" class="cta primary" title="Vers le formulaire de contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </li>
+    </ul>
+</header>
+<main itemscope itemtype="https://schema.org/Person">
+    <section class="hero-section">
+        <h2><span itemprop="name">Loïc</span> <span itemprop="familyName">Delanoë</span>, Développeur Web</h2>
+        <a href="#myProfil" class="cta primary" title="En savoir plus sur moi">Découvrez moi</a>
+    </section>
+    <section class="contact-section">
+        <ul class="contact-list">
+            <li id="coordonnees">
+                <h3>Contact</h3>
+                <address itemprop="telephone">Téléphone :&nbsp;
+                    <a href="tel:+33604014765">+ 33 (0)6 04 01 47 65</a>
+                </address>
+            </li>
+            <li>
+                <h3>Coordonnées</h3>
+                <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <span itemprop="streetAddress">Rue Hullos, 69</span>,
+                    <span itemprop="postalCode">4000</span>
+                    <span itemprop="addressLocality">Liège</span>
+                </address>
+            </li>
+            <li>
+                <div>
+                    <h3>Mon email</h3>
+                    <a href="mailto:loic.del4127@gmail.com" itemprop="email" class="mail-a">loic.del4127@gmail.com</a>
+                </div>
+                <a href="#footerContact" class="cta primary">Contactez moi</a>
+            </li>
+        </ul>
+    </section>
+    <section id="about" class="about-section">
+        <h2 class="hidden">À Propos</h2>
+        <article class="about-info">
+            <h2 class="hidden">Un peu plus sur moi</h2>
+            <ul class="list-info">
+                <li id="myProfil" class="imgs-li">
+                    <figure>
+                        <img class="main-img" src="./img/main-about.jpg"
+                             alt="Image d'un MacBook Pro sur une table blanche avec un livre noir et un stylo à coté"
+                             width="500" height="666">
+                        <figcaption class="hidden">MacBook Pro sur une table avec un livre et un stylo</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="secondary-img" src="./img/about.webp" alt="Diagram avec le nombre 185">
+                        <figcaption class="hidden">Diagram</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="third-img" src="./img/about2.webp" alt="Diagram avec le nombre 250">
+                        <figcaption class="hidden">Diagram</figcaption>
+                    </figure>
+                </li>
+                <li class="about-text">
+                    <h3 class="about-title">Étudiant en
+                        développement Web</h3>
+                    <p>Depuis mon adolescence, je suis passionné de web et de programmation. Ma détermination m’incite à
+                        persévérer sur chaque projet, sans jamais abandonner.</p>
+                    <a class="about-link" href="#">En savoir plus sur moi →</a>
+                </li>
+            </ul>
+        </article>
+    </section>
+    <section class="opinion-section">
+        <h2>Ce qui est important pour moi</h2>
+        <p>Pour moi, un bon développeur Web est une personne à l’écoute de ses clients, qui fournit un design soigné et
+            qui respect les normes / conventions des différents langages qu’il utilise, ainsi que l’accessibilité pour
+            les personnes en situations de handicap.</p>
+        <ul class="opinion-cards">
+            <li>
+                <h3><a href="#">Design Web</a></h3>
+                <p>Il est important de fournir un design complet et soigné aux clients afin qu’ils aient une bonne idée
+                    de ce que leur site va donner quand il sera déployé.</p>
+            </li>
+            <li>
+                <h3><a href="#">Développement Web</a></h3>
+                <p>Après le design, le développement est tout aussi important, mais surtout le respect des normes /
+                    conventions des langages (sémantique en HTML).</p>
+            </li>
+            <li>
+                <h3><a href="#">Accessibilité</a></h3>
+                <p>L’accessibilité d’un site web est cruciale, en effet n’importe quel site internet doit être pensé
+                    aussi pour les personnes en situation de handicap.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="skill-section">
+        <h2>Mes principales compétences</h2>
+        <p>Mes études m’ont donné les compétences essentielles pour le métier de développeur web. En voici 3 d’entres
+            elles.</p>
+        <article>
+            <h3 class="hidden">Les compétences que j'ai aqcuis</h3>
+            <figure>
+                <img src="./img/article-section-img.webp" alt="code CSS">
+                <figcaption></figcaption>
+            </figure>
+            <ul class="skills-list">
+                <li>
+                    <h3>HTML</h3>
+                    <p>Je veille aux bonnes pratiques en HTML, priorisant l’accessibilité et la sémantique.</p>
+                </li>
+                <li>
+                    <h3>CSS3</h3>
+                    <p>J’ai aussi acquis une bonne connaissance de base de CSS3 et maitrise Flexbox ainsi que Grid
+                        Layout.</p>
+                </li>
+                <li>
+                    <h3>JavaScript</h3>
+                    <p>Je suis attentif à son utilisation, et exploite ses capacités en programmation orientée objet
+                        (POO).</p>
+                </li>
+            </ul>
+        </article>
+    </section>
+    <section id="formation" class="formation-section">
+        <h2>Mes formations</h2>
+        <p>Les formations que j’ai suivies ont été fondamentales pour définir ma voie professionnelle. Elles m’ont
+            offert la clarté nécessaire pour trouver ma passion et déterminer la voie que je voulais suivre.</p>
+        <ul class="cards-list">
+            <li class="formation-card">
+                <h3>Licence Économie</h3>
+                <small>Option Gestion</small>
+                <time>2021</time>
+                <a href="#" class="cta primary">Université de Tours</a>
+                <ul>
+                    <li>Comprendre les marchés</li>
+                    <li>Gestion d’entreprise</li>
+                    <li>Statistiques appliquées</li>
+                </ul>
+            </li>
+            <li class="formation-card alternative-card">
+                <h3>Bachelier Infographie</h3>
+                <small>Option Web</small>
+                <time>2023</time>
+                <a href="#" class="cta third">HEPL</a>
+                <ul>
+                    <li>Sens de la créativité</li>
+                    <li>Photoshop, Illustrator</li>
+                    <li>Modélisation 3D</li>
+                    <li>Programmation</li>
+                </ul>
+            </li>
+            <li class="formation-card">
+                <h3>Baccalauréat</h3>
+                <small>Option Mathématiques / LLCE</small>
+                <time>2022</time>
+                <a href="#" class="cta primary">Lycée Ronsard</a>
+                <ul>
+                    <li>Mathématiques</li>
+                    <li>Analyse de texte</li>
+                    <li>Gestion du stress</li>
+                    <li>Expression oral</li>
+                    <li>Pratique sportive</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section id="contact" class="footer-contact-section">
+        <h2 class="hidden">Me contacter</h2>
+        <article>
+            <ul class="footer-contact-list">
+                <li>
+                    <h3>Mon profil vous intéresse ?</h3>
+                </li>
+                <li><p>N’hésitez pas à me contacter par mail, GSM, ou via le formulaire.</p></li>
+                <li><a href="#" class="cta primary">Contactez moi</a></li>
+            </ul>
+        </article>
+    </section>
+</main>
+<footer>
+    <h2 class="hidden">Footer</h2>
+    <nav>
+        <h3>Loïc D.</h3>
+        <ul class="footer-list">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">À Propos</a></li>
+            <li><a href="#">Formations</a></li>
+            <li><a href="#">Compétences</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="social-list">
+            <li><a href="#" class="facebook">Facebook</a></li>
+            <li><a href="#" class="instagram">Instagram</a></li>
+            <li><a href="#" class="twitter">Twitter</a></li>
+        </ul>
+    </nav>
+    <ul class="contact-list footer">
+        <li>
+            <h3>Contact</h3>
+            <address itemprop="telephone">Téléphone :&nbsp;
+                <a href="tel:+33604014765">+ 33 (0)6 04 01 47 65</a>
+            </address>
+        </li>
+        <li>
+            <h3>Coordonnées</h3>
+            <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <span itemprop="streetAddress">Rue Hullos, 69</span>,
+                <span itemprop="postalCode">4000</span>
+                <span itemprop="addressLocality">Liège</span>
+            </address>
+        </li>
+        <li>
+            <form>
+                <h3>Envoyez moi un mail !</h3>
+                <label for="footerName">Nom</label>
+                <input type="text" name="name" id="footerName">
+                <label for="footerEmail">Email</label>
+                <input type="email" name="email" id="footerEmail">
+                <button type="submit">Contactez moi</button>
+            </form>
+        </li>
+    </ul>
+</footer>
+<script src="./src/js/main.js"></script>
+</body>
+</html>
