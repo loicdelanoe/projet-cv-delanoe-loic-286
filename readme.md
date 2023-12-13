@@ -5,7 +5,7 @@
 [Lien du screencast](https://www.youtube.com/watch?v=9eJg6mgGJSM)
 
 ## Modification du Layout
-- Changement du champ email au niveau des coordonnées en section avec : un titre, un email en dessous et un bouton “Contactez moi” à côté qui renvoie en bas de la page au formulaire de contact. Validé par les professeurs lors du feedback.
+- Changement du champ email au niveau des coordonnées en section avec : un titre, un email en dessous et un bouton “Contactez moi” à côté qui renvoie en bas de la page au formulaire de contact (validé par les professeurs lors du feedback).
 
 ## Screenshot du site
 
