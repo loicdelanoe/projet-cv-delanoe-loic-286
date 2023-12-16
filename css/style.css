@@ -26,6 +26,10 @@ a {
     line-height: 1.2em;
 }
 
+a:hover {
+    color: var(--gray);
+}
+
 p {
     font-family: "DM Sans", sans-serif;
     font-size: 1.125em; /* 18px / 16px */
@@ -45,12 +49,6 @@ img {
     position: absolute;
     white-space: nowrap;
     width: 1px;
-}
-
-main section,
-footer {
-    padding: 8.125em 0; /* 130px / 16px */
-    /*border: 1px solid red;*/
 }
 
 .header-list,
@@ -97,6 +95,7 @@ small {
     color: var(--gray);
     margin: 0.625em 0; /* 10px / 16px */
 }
+
 /*----------------------*/
 /* SCROLL TO TOP BUTTON */
 /*----------------------*/
@@ -125,6 +124,7 @@ small {
     background-color: var(--black);
 
 }
+
 /*--------*/
 /* INPUTS */
 /*--------*/
@@ -147,6 +147,7 @@ input::placeholder {
 input:focus {
     outline: none;
 }
+
 /*------------*/
 /* CTA BUTTON */
 /*------------*/
@@ -193,6 +194,7 @@ input:focus {
     background-color: var(--white);
     border: 1px solid var(--black);
 }
+
 /*--------*/
 /* HEADER */
 /*--------*/
@@ -250,7 +252,7 @@ footer nav h3 {
 
 .main-list a:hover,
 .main-list .dropdown-btn:hover {
-    color: var(--dark-grey);
+    color: var(--gray);
 }
 
 .main-nav .btn-list {
@@ -267,7 +269,6 @@ footer nav h3 {
 /*--------------*/
 .hero-section {
     display: flex;
-    min-height: 100vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -280,7 +281,6 @@ footer nav h3 {
 }
 
 .hero-section h2 {
-    font-size: 4.375em; /* 70 / 16 */
     max-width: 11.629em; /* 814 / 70 */
     text-align: center;
     display: block;
@@ -328,18 +328,6 @@ footer nav h3 {
     position: relative;
 }
 
-.list-info:before {
-    content: '';
-    left: 0.938em; /* 15 / 16 */
-    right: 0.938em; /* 15 / 16 */
-    border-radius: 7px;
-    top: 3.75em; /* 60 / 16 */
-    bottom: 3.75em; /* 60 / 16 */
-    border: 1px solid var(--dark-grey);
-    position: absolute;
-    z-index: -1;
-}
-
 .list-info {
     display: flex;
     column-gap: 3.75em; /* 60 / 16 */
@@ -355,7 +343,6 @@ footer nav h3 {
 
 .secondary-img {
     top: 10%;
-    left: -25%;
 }
 
 .third-img {
@@ -365,15 +352,11 @@ footer nav h3 {
 
 .main-img {
     object-fit: cover;
-    max-width: 30.5em; /* 488 / 16 */
     width: 100%;
-    max-height: 40.625em; /* 650 / 16 */
 }
 
 .imgs-li {
     position: relative;
-    margin-left: 5em; /* 80 / 16 */
-    max-width: 50%;
 }
 
 /* TEXT */
@@ -464,7 +447,6 @@ footer nav h3 {
 }
 
 .skill-section figure {
-    max-width: 38.188em; /* 611 / 16 */
 }
 
 .skill-section article img {
@@ -596,7 +578,6 @@ footer nav h3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 3.75em 5em; /* 60 / 16 et 80 / 16 */
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/map.webp");
     background-repeat: no-repeat;
@@ -612,30 +593,23 @@ footer nav h3 {
     max-width: 7.941em; /* 270 / 34 */
 }
 
-.footer-contact-list li:nth-child(2) {
-    margin: 1.25em 0; /* 20 / 16 */
-}
-
 .footer-contact-list li:last-child {
     margin-top: 1.25em; /* 20 / 16 */
 }
 
 .footer-contact-section article p {
     font-size: 1em;
-    max-width: 16.875em; /* 270 / 16 */
     margin: 0;
 }
 
 /* FOOTER */
 
 footer {
-    padding: 3.75em 0 5em 0; /* 80 / 16 et 60 / 16 */
 }
 
 footer nav {
     justify-content: space-between;
     border-bottom: 1px solid var(--dark-grey);
-    padding-bottom: 3.75em; /* 60px */
 }
 
 footer nav h3 {
@@ -652,6 +626,7 @@ footer nav h3 {
 .footer-list a {
     font-size: 1.375em; /* 22 / 16 */
     line-height: 1.16em;
+    transition: .3s;
 }
 
 .social-list {
@@ -672,17 +647,33 @@ footer nav h3 {
     background-repeat: no-repeat;
 }
 
+.social-list a:hover {
+    border: 1px solid var(--gray);
+}
+
 .instagram {
     margin: 0 1.667em; /* 30 / 18 */
     background-image: url("../img/icons/instagram.svg");
+}
+
+.instagram:hover {
+    background-image: url("../img/icons/instagram-hover.svg");
 }
 
 .facebook {
     background-image: url("../img/icons/facebook.svg");
 }
 
+.facebook:hover {
+    background-image: url("../img/icons/facebook-hover.svg");
+}
+
 .twitter {
     background-image: url("../img/icons/twitter.svg");
+}
+
+.twitter:hover {
+    background-image: url("../img/icons/twitter-hover.svg");
 }
 
 footer .contact-list {
