@@ -1,6 +1,7 @@
 /* MAX SCREEN */
 @media screen and (min-width: 1280px) {
-    .burger-button {
+    .burger-button,
+    button[id="burgerButton"] {
         display: none;
     }
 
@@ -75,7 +76,8 @@
 
 /* MID SCEEN */
 @media screen and (max-width: 1280px) and (min-width: 991px) {
-    .burger-button {
+    .burger-button,
+    button[id="burgerButton"] {
         display: none;
     }
 
@@ -171,6 +173,45 @@
         /*background-color: red;*/
     }
 
+    button[id="burgerButton"] {
+        text-indent: -9999px;
+        display: inline-block;
+        margin: 0;
+        width: 30px;
+        line-height: 30px;
+        background-image: url("../img/icons/hamburger.svg");
+        background-size: contain;
+        background-position: center;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .close-burger-button {
+        text-indent: -9999px;
+        display: inline-block;
+        margin: 0;
+        width: 30px;
+        line-height: 30px;
+        background-image: url("../img/icons/close.svg");
+        background-size: contain;
+        background-position: center;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .close-burger-button {
+        position: absolute;
+        font-size: 30px;
+        right: 15px;
+        top: 17px;
+    }
+
+    .opened {
+        transform: translate(0);
+    }
+
     .burger-button:checked {
         position: fixed;
         top: 19px;
@@ -178,13 +219,13 @@
         z-index: 4;
         background-image: url("../img/icons/close.svg");
         /*transition: .3s left;*/
-
     }
 
     .main-nav {
         width: 320px;
         border-right: 1px solid var(--dark-grey);
         z-index: 3;
+        position: relative;
     }
 
     .main-nav h2 a {
@@ -198,7 +239,7 @@
         border-bottom: 1px solid var(--dark-grey);
     }
 
-    .main-list .sub-list {
+    .sub-list {
         display: flex;
         flex-direction: column;
         padding-top: 10px;
@@ -254,11 +295,18 @@
         padding: 0 15px;
     }
 
-    .main-nav {
+    .close {
         transform: translate(-100%);
+    }
+
+    .close-list {
+        display: none;
+    }
+
+    .main-nav {
         flex-direction: column;
         background-color: var(--black);
-        transition: .3s;
+        transition: .2s ease-out;
         position: fixed;
         height: 100%;
         top: 0;
@@ -278,7 +326,6 @@
     .burger-button:checked ~ .main-nav {
         position: fixed;
         transform: translate(0);
-
     }
 
     section {
