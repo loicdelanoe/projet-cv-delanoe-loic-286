@@ -198,6 +198,7 @@
         background-image: url("../img/icons/close.svg");
         background-size: contain;
         background-position: center;
+        background-repeat: no-repeat;
         border: none;
         cursor: pointer;
         background-color: transparent;
