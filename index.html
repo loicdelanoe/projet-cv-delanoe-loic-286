@@ -25,38 +25,43 @@
     <h1 class="hidden">Loïc Delanoë,&nbsp;Développeur web</h1>
     <ul class="header-list">
         <li>
-            <h2><a href="index.html">Loïc D.</a></h2>
+            <h2><a class="navbar-title" href="index.html">Loïc D.</a></h2>
         </li>
         <li>
-            <label class="hidden" for="cssBurgerButton">Open burger menu</label>
-            <input class="burger-button" type="checkbox" name="burger_button" id="cssBurgerButton">
+            <!-- Pure CSS Burger Menu -->
+<!--            <label class="hidden" for="cssBurgerButton">Open burger menu</label>-->
+<!--            <input class="burger-button" type="checkbox" name="burger_button" id="cssBurgerButton">-->
+            <!-- JS Burger Menu -->
             <button id="burgerButton" class="hidden">Open burger menu</button>
             <nav id="mainNav" class="main-nav close">
-                <h2><a href="index.html">Loïc D.</a></h2>
                 <h2 class="hidden">Navigation principale</h2>
+                <div class="burger-wrapper">
+                    <a class="navbar-title" href="index.html">Loïc D.</a>
+                    <button id="closeBurger" class="close-burger-button hidden">Close burger</button>
+                </div>
                 <ul class="main-list">
                     <li><a href="#header" title="Aller vers l'accueil">Accueil</a></li>
-                    <li class="dropdown-btn">À Propos
-                        <ul class="sub-list">
+                    <li class="dropdown-btn" data-id="one">À Propos
+                        <ul class="sub-list" id="one">
                             <li><a href="#coordonnees" class="main-nav-btn" title="Aller vers mes coordonnées">Coordonnées</a>
                             </li>
                             <li><a href="#myProfil" class="main-nav-btn" title="Aller vers mon profil">Mon Profil</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown-btn">Formations
-                        <ul class="sub-list">
-                            <li><a href="#" class="main-nav-btn" title="Aller vers mes coordonnées">Baccalauréat</a>
+                    <li class="dropdown-btn" data-id="two">Formations
+                        <ul class="sub-list" id="two">
+                            <li><a href="#" title="Aller vers mes coordonnées">Baccalauréat</a>
                             </li>
-                            <li><a href="#" class="main-nav-btn" title="Aller vers mon profil">Économie</a></li>
-                            <li><a href="#" class="main-nav-btn" title="Aller vers mon profil">Web</a></li>
+                            <li><a href="#" title="Aller vers mon profil">Économie</a></li>
+                            <li><a href="#" title="Aller vers mon profil">Web</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown-btn">Compétences
-                        <ul class="sub-list">
-                            <li><a href="#" class="main-nav-btn" title="Aller vers les compétences HTML">HTML</a></li>
-                            <li><a href="#" class="main-nav-btn" title="Aller vers les compétences CSS">CSS</a></li>
-                            <li><a href="#" class="main-nav-btn" title="Aller vers les compétences JavaScript">JavaScript</a>
+                    <li class="dropdown-btn" data-id="three">Compétences
+                        <ul class="sub-list" id="three">
+                            <li><a href="#htmlSkill" title="Aller vers les compétences HTML">HTML</a></li>
+                            <li><a href="#cssSkill" title="Aller vers les compétences CSS">CSS</a></li>
+                            <li><a href="#jsSkill" title="Aller vers les compétences JavaScript">JavaScript</a>
                             </li>
                         </ul>
                     </li>
@@ -163,16 +168,16 @@
                 <figcaption class="hidden">Code CSS dans un éditeur de texte</figcaption>
             </figure>
             <ul class="skills-list">
-                <li>
+                <li id="htmlSkill">
                     <h3>HTML</h3>
                     <p>Je veille aux bonnes pratiques en HTML,&nbsp;priorisant l’accessibilité et la sémantique.</p>
                 </li>
-                <li>
+                <li id="cssSkill">
                     <h3>CSS3</h3>
                     <p>J’ai aussi acquis une bonne connaissance de base de CSS3 et maitrise Flexbox ainsi que Grid
                         Layout.</p>
                 </li>
-                <li>
+                <li id="jsSkill">
                     <h3>JavaScript</h3>
                     <p>Je suis attentif à son utilisation,&nbsp;et exploite ses capacités en programmation orientée objet
                         (POO).</p>
@@ -280,6 +285,7 @@
         </li>
     </ul>
 </footer>
+<!--<script src="./src/js/dropdown.js"></script>-->
 <script src="./src/js/main.js"></script>
 </body>
 </html>

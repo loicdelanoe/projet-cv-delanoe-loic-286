@@ -1,23 +1,68 @@
 /* MAX SCREEN */
-@media screen and (min-width: 1280px) {
+@media screen and (width >= 1280px) {
     .burger-button,
     button[id="burgerButton"],
     .close-burger-button {
         display: none;
     }
 
-    .main-nav h2 a {
+    .burger-wrapper .navbar-title {
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    .sub-list {
         display: none;
+    }
+
+    .main-list > li:hover > ul {
+        display: block;
+        height: auto;
+        position: absolute;
+        background-color: black;
+        border: 1px solid var(--dark-grey);
+        padding: 15px 20px;
+        border-radius: 7px;
+        transform: translateY(20px);
+        width: 200px;
+    }
+
+    .sub-list > li > a {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        padding: 8px;
+        position: relative;
+        transition: .3s;
+        width: 100%;
+    }
+
+    .sub-list > li > a:hover {
+        /*transform: translate(20px);*/
+    }
+
+
+    .sub-list > li > a:before {
+        content: '';
+        width: 0;
+        height: 1px;
+        background-color: var(--gray);
+        top: 50%;
+        transition: .3s;
+    }
+
+    .sub-list > li > a:hover:before {
+        width: 15px;
+        margin-right: 13px;
     }
 
     main section,
     footer {
         padding: 8.125em 0; /* 130px / 16px */
-        /*border: 1px solid red;*/
-    }
-
-    .sub-list {
-        display: none;
     }
 
     .hero-section {
@@ -73,14 +118,71 @@
         padding-bottom: 3.75em; /* 60px */
     }
 
+    footer form {
+        min-width: 21.875em; /* 350 / 16 */
+    }
+
 }
 
 /* MID SCEEN */
-@media screen and (max-width: 1280px) and (min-width: 991px) {
+@media screen and (991px <= width <= 1280px) {
     .burger-button,
     button[id="burgerButton"],
     .close-burger-button {
         display: none;
+    }
+
+    .burger-wrapper .navbar-title {
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    .sub-list {
+        display: none;
+    }
+
+    .main-list > li:hover > ul {
+        display: block;
+        height: auto;
+        position: absolute;
+        background-color: black;
+        border: 1px solid var(--dark-grey);
+        padding: 15px 20px;
+        border-radius: 7px;
+        transform: translateY(20px);
+        width: 200px;
+    }
+
+    .sub-list > li > a {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        padding: 8px;
+        position: relative;
+        transition: .3s;
+        width: 100%;
+    }
+
+    .sub-list > li > a:hover {
+    }
+
+
+    .sub-list > li > a:before {
+        content: '';
+        width: 0;
+        height: 1px;
+        background-color: var(--gray);
+        top: 50%;
+        transition: .3s;
+    }
+
+    .sub-list > li > a:hover:before {
+        width: 15px;
+        margin-right: 13px;
     }
 
     .main-nav h2 a {
@@ -89,11 +191,6 @@
 
     main section {
         padding: 5em 0; /* 130px / 16px */
-        /*border: 1px solid red;*/
-    }
-
-    .sub-list {
-        display: none;
     }
 
     .hero-section {
@@ -156,12 +253,16 @@
     }
 
     footer nav {
-        padding-bottom: 1.875em; /* 60px */
+        padding: 0 0.938em 1.875em 0.938em;
+    }
+
+    footer form {
+        min-width: 21.875em; /* 350 / 16 */
     }
 }
 
 /* SMALL SCREEN */
-@media screen and (max-width: 991px) {
+@media screen and (width <= 991px) {
     /* BURGER MENU */
     input[type="checkbox"] {
         appearance: none;
@@ -172,7 +273,6 @@
         background-position: center;
         border-bottom: none;
         cursor: pointer;
-        /*background-color: red;*/
     }
 
     button[id="burgerButton"] {
@@ -187,6 +287,14 @@
         border: none;
         cursor: pointer;
         background-color: transparent;
+    }
+
+    .burger-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid var(--dark-grey);
     }
 
     .close-burger-button {
@@ -205,14 +313,7 @@
     }
 
     .close-burger-button {
-        position: absolute;
         font-size: 30px;
-        right: 15px;
-        top: 17px;
-    }
-
-    .opened {
-        transform: translate(0);
     }
 
     .burger-button:checked {
@@ -221,7 +322,6 @@
         left: 270px;
         z-index: 4;
         background-image: url("../img/icons/close.svg");
-        /*transition: .3s left;*/
     }
 
     .main-nav {
@@ -242,20 +342,27 @@
         border-bottom: 1px solid var(--dark-grey);
     }
 
+    .sub-list.active {
+        height: auto;
+    }
+
     .sub-list {
         display: flex;
         flex-direction: column;
-        padding-top: 10px;
         padding-left: 20px;
-        /*background-color: red;*/
-    }
-
-    .sub-list > li {
-        /*padding: 10px 0;*/
+        padding-top: 10px;
     }
 
     .sub-list > li a {
         font-size: 15px;
+        margin: 0;
+    }
+
+    .main-list > li:first-child {
+        padding: 0;
+    }
+
+    .main-list > li:first-child a {
         margin: 0;
     }
 
@@ -302,10 +409,6 @@
         transform: translate(-100%);
     }
 
-    .close-list {
-        display: none;
-    }
-
     .main-nav {
         flex-direction: column;
         background-color: var(--black);
@@ -324,6 +427,8 @@
 
     .btn-list {
         justify-content: center;
+        margin-top: auto;
+        margin-bottom: 30px;
     }
 
     .burger-button:checked ~ .main-nav {
@@ -360,6 +465,7 @@
 
     .contact-list li {
         align-items: center;
+        text-align: center;
     }
 
     .contact-list li:last-child {
@@ -475,6 +581,10 @@
         row-gap: 20px;
     }
 
+    footer .contact-list li > form {
+        width: 100%;
+    }
+
     .footer-list {
         width: 100%;
     }
@@ -486,9 +596,13 @@
     footer form h3 {
         text-align: center;
     }
+
+    footer form {
+        min-width: 21.875em; /* 350 / 16 */
+    }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (width <= 770px) {
     .hero-section {
         padding-bottom: 120px;
     }
@@ -530,7 +644,10 @@
 
     h2 {
         font-size: 40px;
-        margin: 10px 0;
+    }
+
+    .burger-wrapper .navbar-title {
+        font-size: 30.5px;
     }
 
     main section {
@@ -610,10 +727,11 @@
     }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (width < 770px) {
     .main-img {
-        object-fit: cover;
         width: 75%;
+        height: auto;
+        border-radius: 7px;
     }
 
     .imgs-li > figure {
