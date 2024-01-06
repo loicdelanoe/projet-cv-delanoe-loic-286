@@ -15,17 +15,19 @@
           rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./img/favicon.jpg">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/media-queries.css">
+<!--    <link rel="stylesheet" href="./css/style.css">-->
+<!--    <link rel="stylesheet" href="./css/media-queries.css">-->
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <title>Loïc D.</title>
 </head>
 <body>
-<a class="top-btn" href="#header">Haut de la page</a>
+<!--<a class="top-btn" href="#header">Haut de la page</a>-->
 <header id="header">
     <h1 class="hidden">Loïc Delanoë,&nbsp;Développeur web</h1>
     <ul class="header-list">
         <li>
-            <h2><a class="navbar-title" href="index.html">Loïc D.</a></h2>
+            <h2 class="navbar-title"><a href="index.html">Loïc D.</a></h2>
         </li>
         <li>
             <!-- Pure CSS Burger Menu -->
@@ -33,35 +35,37 @@
 <!--            <input class="burger-button" type="checkbox" name="burger_button" id="cssBurgerButton">-->
             <!-- JS Burger Menu -->
             <button id="burgerButton" class="hidden">Open burger menu</button>
-            <nav id="mainNav" class="main-nav close">
+            <nav id="mainNav" class="main-nav">
                 <h2 class="hidden">Navigation principale</h2>
                 <div class="burger-wrapper">
                     <a class="navbar-title" href="index.html">Loïc D.</a>
                     <button id="closeBurger" class="close-burger-button hidden">Close burger</button>
                 </div>
                 <ul class="main-list">
-                    <li><a href="#header" title="Aller vers l'accueil">Accueil</a></li>
-                    <li class="dropdown-btn" data-id="one">À Propos
+                    <li><h3><a class="main-link" href="#header" title="Aller vers l'accueil">Accueil</a></h3></li>
+                    <li class="dropdown-btn" data-id="one"><h3>À Propos</h3>
                         <ul class="sub-list" id="one">
-                            <li><a href="#coordonnees" class="main-nav-btn" title="Aller vers mes coordonnées">Coordonnées</a>
+                            <li>
+                                <a href="#coordonnees" class="sub-list-link" title="Aller vers mes coordonnées">Coordonnées</a>
                             </li>
-                            <li><a href="#myProfil" class="main-nav-btn" title="Aller vers mon profil">Mon Profil</a>
+                            <li>
+                                <a href="#myProfil" class="sub-list-link" title="Aller vers mon profil">Mon Profil</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown-btn" data-id="two">Formations
+                    <li class="dropdown-btn" data-id="two"><h3>Formations</h3>
                         <ul class="sub-list" id="two">
-                            <li><a href="#" title="Aller vers mes coordonnées">Baccalauréat</a>
+                            <li><a class="sub-list-link" href="#" title="Aller vers mes coordonnées">Baccalauréat</a>
                             </li>
-                            <li><a href="#" title="Aller vers mon profil">Économie</a></li>
-                            <li><a href="#" title="Aller vers mon profil">Web</a></li>
+                            <li><a class="sub-list-link" href="#" title="Aller vers mon profil">Économie</a></li>
+                            <li><a class="sub-list-link" href="#" title="Aller vers mon profil">Web</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown-btn" data-id="three">Compétences
+                    <li class="dropdown-btn" data-id="three"><h3>Compétences</h3>
                         <ul class="sub-list" id="three">
-                            <li><a href="#htmlSkill" title="Aller vers les compétences HTML">HTML</a></li>
-                            <li><a href="#cssSkill" title="Aller vers les compétences CSS">CSS</a></li>
-                            <li><a href="#jsSkill" title="Aller vers les compétences JavaScript">JavaScript</a>
+                            <li><a class="sub-list-link" href="#htmlSkill" title="Aller vers les compétences HTML">HTML</a></li>
+                            <li><a class="sub-list-link" href="#cssSkill" title="Aller vers les compétences CSS">CSS</a></li>
+                            <li><a class="sub-list-link" href="#jsSkill" title="Aller vers les compétences JavaScript">JavaScript</a>
                             </li>
                         </ul>
                     </li>
@@ -77,19 +81,21 @@
 </header>
 <main itemscope itemtype="https://schema.org/Person">
     <section id="hero" class="hero-section">
-        <h2><span itemprop="name">Loïc</span> <span itemprop="familyName">Delanoë</span>, Développeur Web</h2>
+        <h2 class="hero-title">
+            <span itemprop="name">Loïc</span> <span itemprop="familyName">Delanoë</span>, Développeur Web
+        </h2>
         <a href="#myProfil" class="cta primary" title="En savoir plus sur moi">Découvrez moi</a>
     </section>
     <section id="contact" class="contact-section">
         <ul class="contact-list">
             <li id="coordonnees">
-                <h3>Contact</h3>
+                <h3 class="contact-title">Contact</h3>
                 <address itemprop="telephone">Téléphone&nbsp;:&nbsp;
-                    <a href="tel:+33604014765">+ 33 (0)6 04 01 47 65</a>
+                    <a class="telephone" href="tel:+33604014765">+ 33 (0)6 04 01 47 65</a>
                 </address>
             </li>
             <li>
-                <h3>Coordonnées</h3>
+                <h3 class="contact-title">Coordonnées</h3>
                 <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                     <span itemprop="streetAddress">Rue Hullos,&nbsp;69</span>,
                     <span itemprop="postalCode">4000</span>
@@ -97,25 +103,25 @@
                 </address>
             </li>
             <li>
-                <div>
-                    <h3>Mon email</h3>
-                    <a href="mailto:loic.del4127@gmail.com" itemprop="email" class="mail-a">loic.del4127@gmail.com</a>
+                <div class="contact-mail-wrapper">
+                    <h3 class="contact-title">Mon email</h3>
+                    <a href="mailto:loic.del4127@gmail.com" itemprop="email" class="contact-mail">loic.del4127@gmail.com</a>
                 </div>
                 <a href="#footerContact" class="cta primary">Contactez moi</a>
             </li>
         </ul>
     </section>
-    <section id="about" class="about-section">
+    <section id="about" class="about-section section">
         <h2 class="hidden">À Propos</h2>
         <article class="about-info">
             <h2 class="hidden">Un peu plus sur moi</h2>
-            <ul class="list-info">
-                <li id="myProfil" class="imgs-li">
-                    <figure>
+            <ul class="list-info base-container">
+                <li id="myProfil" class="img-wrapper">
+                    <figure class="main-img-wrapper">
                         <img class="main-img" src="./img/main-about.jpg"
                              alt="Image d'un MacBook Pro sur une table blanche avec un livre noir et un stylo à coté"
                              width="500" height="666">
-                        <figcaption class="hidden">MacBook Pro sur une table avec un livre et un stylo</figcaption>
+                        <figcaption class="hidden">Un MacBook Pro sur une table avec un livre et un stylo</figcaption>
                     </figure>
                     <figure>
                         <img class="secondary-img" src="./img/about.webp" alt="Diagram avec le nombre 185">
@@ -126,8 +132,8 @@
                         <figcaption class="hidden">Diagram</figcaption>
                     </figure>
                 </li>
-                <li class="about-text">
-                    <h3 class="about-title">Étudiant en développement Web</h3>
+                <li class="about-wrapper">
+                    <h3 class="title">Étudiant en développement Web</h3>
                     <p>Depuis mon adolescence,&nbsp;je suis passionné de web et de programmation.&nbsp;Ma détermination m’incite à
                         persévérer sur chaque projet,&nbsp;sans jamais abandonner.</p>
                     <a class="about-link" href="#">En savoir plus sur moi →</a>
@@ -135,78 +141,78 @@
             </ul>
         </article>
     </section>
-    <section id="opinion" class="opinion-section">
-        <h2>Ce qui est important pour moi</h2>
+    <section id="opinion" class="opinion-section section">
+        <h2 class="title">Ce qui est important pour moi</h2>
         <p>Pour moi,&nbsp;un bon développeur Web est une personne à l’écoute de ses clients,&nbsp;qui fournit un design soigné et
             qui respect les normes&nbsp;/&nbsp;conventions des différents langages qu’il utilise,&nbsp;ainsi que l’accessibilité pour
             les personnes en situations de handicap.</p>
-        <ul class="opinion-cards">
-            <li>
-                <h3>Design Web</h3>
+        <ul class="opinion-wrapper">
+            <li class="opinion-card">
+                <h3 class="opinion-title">Design Web</h3>
                 <p>Il est important de fournir un design complet et soigné aux clients afin qu’ils aient une bonne idée
                     de ce que leur site va donner quand il sera déployé.</p>
             </li>
-            <li>
-                <h3>Développement Web</h3>
+            <li class="opinion-card">
+                <h3 class="opinion-title">Développement Web</h3>
                 <p>Après le design, le développement est tout aussi important,&nbsp;mais surtout le respect des normes&nbsp;/&nbsp;conventions des langages&nbsp;(sémantique en HTML).</p>
             </li>
-            <li>
-                <h3>Accessibilité</h3>
+            <li class="opinion-card">
+                <h3 class="opinion-title">Accessibilité</h3>
                 <p>L’accessibilité d’un site web est cruciale,&nbsp;en effet n’importe quel site internet doit être pensé
                     aussi pour les personnes en situation de handicap.</p>
             </li>
         </ul>
     </section>
-    <section class="skill-section">
-        <h2>Mes principales compétences</h2>
+    <section class="skill-section section">
+        <h2 class="title">Mes principales compétences</h2>
         <p>Mes études m’ont donné les compétences essentielles pour le métier de développeur web.&nbsp;En voici 3 d’entres
             elles.</p>
-        <article>
+        <article class="skills-wrapper base-container">
             <h3 class="hidden">Les compétences que j'ai aqcuis</h3>
-            <figure>
+            <figure class="skills-img-wrapper">
                 <img src="./img/article-section-img.webp" alt="code CSS">
-                <figcaption class="hidden">Code CSS dans un éditeur de texte</figcaption>
+                <figcaption class="hidden">Code <abbr title="Cascading Style Sheets">CSS</abbr> dans un éditeur de texte</figcaption>
             </figure>
             <ul class="skills-list">
                 <li id="htmlSkill">
-                    <h3>HTML</h3>
-                    <p>Je veille aux bonnes pratiques en HTML,&nbsp;priorisant l’accessibilité et la sémantique.</p>
+                    <h3><abbr title="HyperText Markup Language">HTML</abbr></h3>
+                    <p>Je veille aux bonnes pratiques en <abbr title="HyperText Markup Language">HTML</abbr>,&nbsp;priorisant l’accessibilité et la sémantique.</p>
                 </li>
                 <li id="cssSkill">
-                    <h3>CSS3</h3>
-                    <p>J’ai aussi acquis une bonne connaissance de base de CSS3 et maitrise Flexbox ainsi que Grid
+                    <h3><abbr title="Cascading Style Sheets">CSS3</abbr></h3>
+                    <p>J’ai aussi acquis une bonne connaissance de base de <abbr title="Cascading Style Sheets">CSS3</abbr> et maitrise Flexbox ainsi que Grid
                         Layout.</p>
                 </li>
                 <li id="jsSkill">
                     <h3>JavaScript</h3>
                     <p>Je suis attentif à son utilisation,&nbsp;et exploite ses capacités en programmation orientée objet
-                        (POO).</p>
+                        (<abbr title="Programmation Orientée Objet">POO</abbr>).</p>
                 </li>
             </ul>
         </article>
     </section>
-    <section id="formation" class="formation-section">
-        <h2>Mes formations</h2>
+    <section id="formation" class="formation-section section">
+        <h2 class="title">Mes formations</h2>
         <p>Les formations que j’ai suivies ont été fondamentales pour définir ma voie professionnelle.&nbsp;Elles m’ont
             offert la clarté nécessaire pour trouver ma passion et déterminer la voie que je voulais suivre.</p>
-        <ul class="cards-list">
+        <ul class="cards-list base-container">
             <li class="formation-card">
-                <h3>Licence Économie</h3>
+                <h3 class="formation-title">Licence Économie</h3>
                 <small>Option Gestion</small>
                 <time>2021</time>
                 <a href="https://www.univ-tours.fr/" class="cta primary">Université de Tours</a>
-                <ul>
+                <ul class="formation-list">
                     <li>Comprendre les marchés</li>
                     <li>Gestion d’entreprise</li>
                     <li>Statistiques appliquées</li>
                 </ul>
             </li>
-            <li class="formation-card alternative-card">
-                <h3>Bachelier Infographie</h3>
+            <li class="formation-card alternative">
+                <h3 class="formation-title">Bachelier Infographie</h3>
                 <small>Option Web</small>
                 <time>2023</time>
                 <a href="https://www.hepl.be/fr" class="cta third">HEPL</a>
-                <ul>
+                <ul class="formation-list">
                     <li>Sens de la créativité</li>
                     <li>Photoshop,&nbsp;Illustrator</li>
                     <li>Modélisation 3D</li>
@@ -214,11 +220,11 @@
                 </ul>
             </li>
             <li class="formation-card">
-                <h3>Baccalauréat</h3>
+                <h3 class="formation-title">Baccalauréat</h3>
                 <small>Option Mathématiques&nbsp;/&nbsp;LLCE</small>
                 <time>2022</time>
                 <a href="https://www.lyceeronsard.eu/" class="cta primary">Lycée Ronsard</a>
-                <ul>
+                <ul class="formation-list">
                     <li>Mathématiques</li>
                     <li>Analyse de texte</li>
                     <li>Gestion du stress</li>
@@ -228,9 +234,9 @@
             </li>
         </ul>
     </section>
-    <section class="footer-contact-section">
+    <section class="footer-contact-section section">
         <h2 class="hidden">Me contacter</h2>
-        <article>
+        <article class="footer-contact-wrapper base-container">
             <ul class="footer-contact-list">
                 <li>
                     <h3>Mon profil vous intéresse&nbsp;?</h3>
@@ -243,8 +249,8 @@
 </main>
 <footer>
     <h2 class="hidden">Footer</h2>
-    <nav>
-        <h3>Loïc D.</h3>
+    <nav class="footer-nav">
+        <h3 class="navbar-title">Loïc D.</h3>
         <ul class="footer-list">
             <li><a href="#">Accueil</a></li>
             <li><a href="#">À Propos</a></li>
@@ -253,9 +259,9 @@
             <li><a href="#">Contact</a></li>
         </ul>
         <ul class="social-list">
-            <li><a href="#" class="facebook">Facebook</a></li>
-            <li><a href="#" class="instagram">Instagram</a></li>
-            <li><a href="#" class="twitter">Twitter</a></li>
+            <li><a href="#" class="social-button facebook">Facebook</a></li>
+            <li><a href="#" class="social-button instagram">Instagram</a></li>
+            <li><a href="#" class="social-button twitter">Twitter</a></li>
         </ul>
     </nav>
     <ul class="contact-list footer">
