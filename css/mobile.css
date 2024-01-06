@@ -91,6 +91,9 @@ input:focus {
     outline: none;
 }
 
+/* HOVER */
+
+
 /*--------*/
 /* HEADER */
 /*--------*/
@@ -188,7 +191,7 @@ nav.opened {
     padding-left: 15px;
 }
 
-.dropdown-btn,
+.dropdown-btn > h3,
 .main-link {
     display: flex;
     flex-direction: column;
@@ -199,6 +202,19 @@ nav.opened {
     cursor: pointer;
     width: 100%;
     line-height: 1.43em;
+    /*position: relative;*/
+    z-index: 3;
+    transition: .3s;
+}
+
+.dropdown-btn:hover > h3,
+.main-link:hover,
+.footer-list a:hover {
+    color: var(--gray);
+}
+
+.dropdown-btn {
+    cursor: pointer;
     position: relative;
 }
 
@@ -567,7 +583,7 @@ footer {
     width: 100%;
     font-size: 1.375em;
     line-height: 1.16em;
-    /*transition: .3s;*/
+    transition: .3s;
 }
 
 footer .navbar-title {
