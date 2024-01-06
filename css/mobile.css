@@ -189,6 +189,8 @@ nav.opened {
     display: flex;
     flex-direction: column;
     padding-left: 15px;
+    overflow-y: scroll;
+
 }
 
 .dropdown-btn > h3,
