@@ -53,20 +53,20 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown-btn" data-id="two"><h3>Formations</h3>
-                        <ul class="sub-list" id="two">
-                            <li><a class="sub-list-link" href="#" title="Aller vers mes coordonnées">Baccalauréat</a>
-                            </li>
-                            <li><a class="sub-list-link" href="#" title="Aller vers mon profil">Économie</a></li>
-                            <li><a class="sub-list-link" href="#" title="Aller vers mon profil">Web</a></li>
-                        </ul>
-                    </li>
                     <li class="dropdown-btn" data-id="three"><h3>Compétences</h3>
                         <ul class="sub-list" id="three">
-                            <li><a class="sub-list-link" href="#htmlSkill" title="Aller vers les compétences HTML">HTML</a></li>
-                            <li><a class="sub-list-link" href="#cssSkill" title="Aller vers les compétences CSS">CSS</a></li>
-                            <li><a class="sub-list-link" href="#jsSkill" title="Aller vers les compétences JavaScript">JavaScript</a>
+                            <li><a class="sub-list-link" href="#skills" title="Aller vers les compétences HTML">HTML</a></li>
+                            <li><a class="sub-list-link" href="#skills" title="Aller vers les compétences CSS">CSS</a></li>
+                            <li><a class="sub-list-link" href="#skills" title="Aller vers les compétences JavaScript">JavaScript</a>
                             </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-btn" data-id="two"><h3>Formations</h3>
+                        <ul class="sub-list" id="two">
+                            <li><a class="sub-list-link" href="#formation" title="Aller vers mes coordonnées">Baccalauréat</a>
+                            </li>
+                            <li><a class="sub-list-link" href="#formation" title="Aller vers mon profil">Économie</a></li>
+                            <li><a class="sub-list-link" href="#formation" title="Aller vers mon profil">Web</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -164,7 +164,7 @@
         </ul>
     </section>
     <section class="skill-section section">
-        <h2 class="title">Mes principales compétences</h2>
+        <h2 id="skills" class="title">Mes principales compétences</h2>
         <p>Mes études m’ont donné les compétences essentielles pour le métier de développeur web.&nbsp;En voici 3 d’entres
             elles.</p>
         <article class="skills-wrapper base-container">
@@ -191,12 +191,12 @@
             </ul>
         </article>
     </section>
-    <section id="formation" class="formation-section section">
-        <h2 class="title">Mes formations</h2>
+    <section class="formation-section section">
+        <h2 id="formation" class="title">Mes formations</h2>
         <p>Les formations que j’ai suivies ont été fondamentales pour définir ma voie professionnelle.&nbsp;Elles m’ont
             offert la clarté nécessaire pour trouver ma passion et déterminer la voie que je voulais suivre.</p>
         <ul class="cards-list base-container">
-            <li class="formation-card">
+            <li id="eco" class="formation-card">
                 <h3 class="formation-title">Licence Économie</h3>
                 <small>Option Gestion</small>
                 <time>2021</time>

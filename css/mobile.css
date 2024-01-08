@@ -19,7 +19,7 @@
 }
 
 .base-container {
-    padding: 0 15px;
+    /*padding: 0 15px;*/
 }
 
 .hidden {
@@ -371,6 +371,7 @@ img {
     flex-direction: column;
     padding: 20px;
     text-align: center;
+    align-items: center;
 }
 
 .about-link {
@@ -665,6 +666,11 @@ footer form > button {
 
 footer form > label {
     font-family: "Space Grotesk", sans-serif;
+}
+
+.footer-contact-wrapper {
+    padding: 0 15px;
+    width: 100%;
 }
 
 /*------------*/

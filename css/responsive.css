@@ -3,6 +3,10 @@
         object-fit: contain;
     }
 
+    .hero-title {
+        max-width: 540px;
+    }
+
     .skills-list {
         text-align: left;
     }
@@ -269,6 +273,7 @@
     .about-wrapper {
         width: 50%;
         text-align: left;
+        align-items: initial;
     }
 
     .about-info {
@@ -364,6 +369,11 @@
     .skills-img-wrapper {
         /*display: flex;*/
         width: 55%;
+    }
+
+    .skills-img-wrapper img {
+        min-height: 100%;
+        object-fit: cover;
     }
 
     .skills-list {
@@ -477,10 +487,6 @@
     .cards-list,
     .opinion-wrapper {
         grid-column-gap: 40px;
-    }
-
-    .skills-img-wrapper > img {
-        min-height: 100%;
     }
 
     .footer-contact-list {
