@@ -269,7 +269,7 @@ nav.opened {
     grid-template-rows: 1fr;
 }
 
-.js-expand {
+.expand-dropdown {
     grid-template-rows: 1fr;
 }
 
@@ -774,4 +774,8 @@ footer form > label {
     color: black;
     background-color: var(--white);
     border: 1px solid var(--black);
+}
+
+.no-js-nav {
+    transform: translate(0);
 }

@@ -1,6 +1,10 @@
 const dropdownButton = {
     dropdownElements: document.querySelectorAll('.dropdown-btn'),
+    subListWrapperElements: document.querySelectorAll('.sub-list-wrapper'),
     init() {
+        this.subListWrapperElements.forEach((subListWrapper) => {
+            subListWrapper.classList.remove('expand-dropdown');
+        });
         this.addEventListeners();
     },
     addEventListeners() {
@@ -15,9 +19,9 @@ const dropdownButton = {
     this.dropdownElements.forEach((dropdownButton) => {
         const subListWrapper = document.getElementById(dropdownButton.dataset.id);
         if (dropdownButton.dataset.id === id) {
-            subListWrapper.classList.toggle('js-expand');
+            subListWrapper.classList.toggle('expand-dropdown');
         } else {
-            subListWrapper.classList.remove('js-expand');
+            subListWrapper.classList.remove('expand-dropdown');
         }
     });
 }
