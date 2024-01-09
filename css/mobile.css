@@ -5,6 +5,16 @@
     --white: #FFFFFF;
 }
 
+@font-face {
+    font-family: "Fa solid 900";
+    src: url("../font/fa-solid-900.ttf");
+}
+
+@font-face {
+    font-family: "Fa brands 400";
+    src: url("../font/fa-brands-400.ttf");
+}
+
 * {
     box-sizing: border-box;
 }
@@ -46,6 +56,7 @@ h1, h2, h3 {
     font-family: "Space Grotesk", sans-serif;
     color: var(--white);
     margin: 10px 0;
+    letter-spacing: .2px;
 }
 
 .title {
@@ -89,10 +100,16 @@ input::placeholder {
 
 input:focus {
     outline: none;
+    border-bottom: 1px solid var(--white);
 }
 
 /* HOVER */
-
+a:hover:not(.navbar-title a, .cta),
+.instagram:hover:before,
+.facebook:hover:before,
+.twitter:hover:before {
+    color: var(--gray);
+}
 
 /*--------*/
 /* HEADER */
@@ -376,6 +393,15 @@ img {
 
 .about-link {
     margin-top: 40px;
+    transition: .3s;
+}
+
+.about-link:after {
+    content: '\2192';
+    font-family: "Fa solid 900", sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
 /*-----------------*/
@@ -435,13 +461,17 @@ img {
 
 .skills-list h3 {
     font-size: 1.75em;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 20px;
 }
 
 .skills-list h3:before {
-    content: url("../img/icons/check.svg");
+    content: '✓';
+    font-size: 20px;
+    line-height: 1em;
+    font-family: "Fa solid 900", sans-serif;
     display: inline-block;
-    vertical-align: middle;
-    margin-right: 0.536em;
 }
 
 /*-------------------*/
@@ -608,33 +638,37 @@ footer .navbar-title {
     line-height: 1.944em; /* 35 / 18 */
     border: 1px solid var(--white);
     border-radius: 7px;
-    background-position: center;
-    background-size: 80%;
-    background-repeat: no-repeat;
+    /*background-position: center;*/
+    /*background-size: 80%;*/
+    /*background-repeat: no-repeat;*/
+    transition: .3s;
 }
 
-.instagram {
-    background-image: url("../img/icons/instagram.svg");
+.instagram:before,
+.facebook:before,
+.twitter:before {
+    text-indent: initial;
+    font-family: "Fa brands 400", sans-serif;
+    font-size: 19px;
+    color: white;
+    width: 35px;
+    transition: .3s;
 }
 
-.instagram:hover {
-    background-image: url("../img/icons/instagram-hover.svg");
+.social-button:hover {
+    border: 1px solid var(--gray);
 }
 
-.facebook {
-    background-image: url("../img/icons/facebook.svg");
+.instagram:before {
+    content: '\F16D';
 }
 
-.facebook:hover {
-    background-image: url("../img/icons/facebook-hover.svg");
+.twitter:before {
+    content: '\F099';
 }
 
-.twitter {
-    background-image: url("../img/icons/twitter.svg");
-}
-
-.twitter:hover {
-    background-image: url("../img/icons/twitter-hover.svg");
+.facebook:before {
+    content: '\F39E';
 }
 
 .footer {
@@ -680,7 +714,8 @@ footer form > label {
     font-family: "Space Grotesk", sans-serif;
     font-size: 0.938em; /* 15px / 16px */
     display: inline-block;
-    padding: 1em 1.5em; /* 16px et 24px / 16px */
+    padding: 16px 24px;
+    font-weight: 500;
     border: 1px solid var(--white);
     border-radius: 22px;
     transition: 0.3s;
