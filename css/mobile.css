@@ -330,7 +330,7 @@ nav.opened {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), url("../img/test.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), url("../img/hero-background.jpg");
     background-position: 0 0, 50%;
     background-size: auto, cover;
     background-attachment: scroll;
