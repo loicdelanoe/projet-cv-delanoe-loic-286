@@ -342,11 +342,17 @@ nav.opened {
 .showUp {
     animation: showUp 1s;
     transition: .8s;
+    opacity: 1;
 }
 
 .scaleUp {
     animation: scale 1s;
     transition: .1s;
+    opacity: 1;
+}
+
+.no-opacity {
+    opacity: 0;
 }
 
 @keyframes showUp {
