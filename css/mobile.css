@@ -663,9 +663,9 @@ footer .navbar-title {
     transition: .3s;
 }
 
-.instagram:before,
-.facebook:before,
-.twitter:before {
+.instagram:after,
+.facebook:after,
+.twitter:after {
     text-indent: initial;
     font-family: "Fa brands 400", sans-serif;
     font-size: 19px;
@@ -678,15 +678,15 @@ footer .navbar-title {
     border: 1px solid var(--gray);
 }
 
-.instagram:before {
+.instagram:after {
     content: '\F16D';
 }
 
-.twitter:before {
+.twitter:after {
     content: '\F099';
 }
 
-.facebook:before {
+.facebook:after {
     content: '\F39E';
 }
 
