@@ -1,12 +1,12 @@
 const observers = {
-    showUpElements: document.querySelectorAll('[data-animation="showUp"]'),
-    scaleUpElements: document.querySelectorAll('[data-animation="scaleUp"]'),
+    showUpElements: document.querySelectorAll(`[data-animation="${settings.showUpClass}"]`),
+    scaleUpElements: document.querySelectorAll(`[data-animation="${settings.scaleUpClass}"]`),
     init() {
         this.showUpElements.forEach((showUpElement) => {
-            showUpElement.classList.add('no-opacity');
+            showUpElement.classList.add(settings.NoOpacityClass);
         });
         this.scaleUpElements.forEach((scaleUpElement) => {
-            scaleUpElement.classList.add('no-opacity');
+            scaleUpElement.classList.add(settings.NoOpacityClass);
         });
         this.showUpObserver = new IntersectionObserver(this.showUpAnimation);
         this.scaleUpObserver = new IntersectionObserver(this.scaleUpAnimation);
@@ -15,16 +15,16 @@ const observers = {
     showUpAnimation(entries) {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('showUp');
-                entry.target.classList.remove('no-opacity');
+                entry.target.classList.add(settings.showUpClass);
+                entry.target.classList.remove(settings.NoOpacityClass);
             }
         });
     },
     scaleUpAnimation(entries) {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('scaleUp');
-                entry.target.classList.remove('no-opacity');
+                entry.target.classList.add(settings.scaleUpClass);
+                entry.target.classList.remove(settings.NoOpacityClass);
             }
         });
     },

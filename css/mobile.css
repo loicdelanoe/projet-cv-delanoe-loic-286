@@ -106,9 +106,9 @@ input:focus {
 
 /* HOVER */
 a:hover:not(.navbar-title a, .cta),
-.instagram:hover:before,
-.facebook:hover:before,
-.twitter:hover:before,
+.instagram:hover:after,
+.facebook:hover:after,
+.twitter:hover:after,
 .main-link:hover,
 .footer-list a:hover {
     color: var(--gray);

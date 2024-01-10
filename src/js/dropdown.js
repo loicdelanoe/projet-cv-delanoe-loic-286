@@ -3,7 +3,7 @@ const dropdownButton = {
     subListWrapperElements: document.querySelectorAll('.sub-list-wrapper'),
     init() {
         this.subListWrapperElements.forEach((subListWrapper) => {
-            subListWrapper.classList.remove('expand-dropdown');
+            subListWrapper.classList.remove(settings.expandClass);
         });
         this.addEventListeners();
     },
@@ -19,9 +19,9 @@ const dropdownButton = {
     this.dropdownElements.forEach((dropdownButton) => {
         const subListWrapper = document.getElementById(dropdownButton.dataset.id);
         if (dropdownButton.dataset.id === id) {
-            subListWrapper.classList.toggle('expand-dropdown');
+            subListWrapper.classList.toggle(settings.expandClass);
         } else {
-            subListWrapper.classList.remove('expand-dropdown');
+            subListWrapper.classList.remove(settings.expandClass);
         }
     });
 }

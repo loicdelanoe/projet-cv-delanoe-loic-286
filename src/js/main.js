@@ -1,23 +1,22 @@
 const burgerMenu = {
-    mainNavElement: document.getElementById('mainNav'),
-    burgerButton: document.getElementById('burgerButton'),
-    closeBurger: document.getElementById('closeBurger'),
-    navTitle: document.querySelector('.main-nav h2'),
+    mainNavElement: document.getElementById(settings.mainNavId),
+    burgerButton: document.getElementById(settings.burgerButtonId),
+    closeBurger: document.getElementById(settings.closeBurgerId),
+    navTitle: document.querySelector(settings.navTitleSelector),
     init() {
-        this.mainNavElement.classList.remove('no-js-nav');
-        this.closeBurgerButton = document.getElementById('closeBurger');
-        this.burgerButton.classList.remove('hidden');
-        this.closeBurger.classList.remove('hidden');
-        this.mainNavElement.classList.remove('opened');
+        this.mainNavElement.classList.remove(settings.noJsNavClass);
+        this.burgerButton.classList.remove(settings.hiddenClass);
+        this.closeBurger.classList.remove(settings.hiddenClass);
+        this.mainNavElement.classList.remove(settings.openedClass);
         this.addEventListeners();
     },
     addEventListeners() {
         this.burgerButton.addEventListener('click', () => {
-            this.mainNavElement.classList.toggle('opened');
+            this.mainNavElement.classList.toggle(settings.openedClass);
         });
 
-        this.closeBurgerButton.addEventListener('click', () => {
-            this.mainNavElement.classList.toggle('opened');
+        this.closeBurger.addEventListener('click', () => {
+            this.mainNavElement.classList.toggle(settings.openedClass);
         });
     }
 };
