@@ -114,6 +114,31 @@ a:hover:not(.navbar-title a, .cta),
     color: var(--gray);
 }
 
+.top-btn {
+    z-index: 1;
+    text-indent: -9999px;
+    position: fixed;
+    min-width: 3.438em; /* 55px / 16px */
+    line-height: 3.438em; /* 55px / 16px */
+    background-color: var(--white);
+    color: var(--black);
+    bottom: 40px;
+    left: 5%;
+    background-image: url("../img/icons/arrow-down.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+    border-radius: 22px;
+    transition: 0.3s;
+    border: 1px solid var(--white);
+}
+
+.top-btn:hover {
+    background-image: url("../img/icons/arrow-down-hover.svg");
+    background-color: var(--black);
+}
+
 /*--------*/
 /* HEADER */
 /*--------*/
