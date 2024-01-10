@@ -339,6 +339,38 @@ nav.opened {
     line-height: 1.15em;
 }
 
+.showUp {
+    animation: showUp 1s;
+    transition: .8s;
+}
+
+.scaleUp {
+    animation: scale 1s;
+    transition: .1s;
+}
+
+@keyframes showUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(60%);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 /*-----------------*/
 /* CONTACT SECTION */
 /*-----------------*/
@@ -416,6 +448,9 @@ img {
 .third-img {
     position: absolute;
     width: 35%;
+    transform: scale(1);
+    opacity: 1;
+    transition: .5s;
 }
 
 .secondary-img {

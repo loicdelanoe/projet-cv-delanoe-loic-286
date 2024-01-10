@@ -87,13 +87,13 @@
 </header>
 <main itemscope itemtype="https://schema.org/Person">
     <section id="hero" class="hero-section">
-        <h2 class="hero-title">
+        <h2 class="hero-title" data-animation="showUp">
             <span itemprop="name">Loïc</span> <span itemprop="familyName">Delanoë</span>, Développeur Web
         </h2>
-        <a href="#myProfil" class="cta primary" title="En savoir plus sur moi">Découvrez moi</a>
+        <a href="#myProfil" class="cta primary" title="En savoir plus sur moi" data-animation="showUp">Découvrez moi</a>
     </section>
     <section id="contact" class="contact-section">
-        <ul class="contact-list">
+        <ul class="contact-list" data-animation="showUp">
             <li id="coordonnees">
                 <h3 class="contact-title">Contact</h3>
                 <address itemprop="telephone">Téléphone&nbsp;:&nbsp;
@@ -118,41 +118,41 @@
         </ul>
     </section>
     <section id="about" class="about-section section">
-        <h2 class="hidden">À Propos</h2>
+        <h2 class="hidden" data-animation="showUp">À Propos</h2>
         <article class="about-info">
-            <h2 class="hidden">Un peu plus sur moi</h2>
+            <h2 class="hidden" data-animation="showUp">Un peu plus sur moi</h2>
             <ul class="list-info base-container">
                 <li id="myProfil" class="img-wrapper">
                     <figure class="main-img-wrapper">
                         <img class="main-img" src="./img/main-about.jpg"
                              alt="Image d'un MacBook Pro sur une table blanche avec un livre noir et un stylo à coté"
-                             width="500" height="666">
+                             width="500" height="666" data-animation="showUp">
                         <figcaption class="hidden">Un MacBook Pro sur une table avec un livre et un stylo</figcaption>
                     </figure>
                     <figure>
-                        <img class="secondary-img" src="./img/about.webp" alt="Diagram avec le nombre 185">
+                        <img class="secondary-img" src="./img/about.webp" alt="Diagram avec le nombre 185" data-animation="scaleUp">
                         <figcaption class="hidden">Diagram</figcaption>
                     </figure>
                     <figure>
-                        <img class="third-img" src="./img/about2.webp" alt="Diagram avec le nombre 250">
+                        <img class="third-img" src="./img/about2.webp" alt="Diagram avec le nombre 250" data-animation="scaleUp">
                         <figcaption class="hidden">Diagram</figcaption>
                     </figure>
                 </li>
                 <li class="about-wrapper">
-                    <h3 class="title">Étudiant en développement Web</h3>
-                    <p>Depuis mon adolescence,&nbsp;je suis passionné de web et de programmation.&nbsp;Ma détermination m’incite à
+                    <h3 class="title" data-animation="showUp">Étudiant en développement Web</h3>
+                    <p data-animation="showUp">Depuis mon adolescence,&nbsp;je suis passionné de web et de programmation.&nbsp;Ma détermination m’incite à
                         persévérer sur chaque projet,&nbsp;sans jamais abandonner.</p>
-                    <a class="about-link" href="#">En savoir plus sur moi</a>
+                    <a class="about-link" href="#" data-animation="showUp">En savoir plus sur moi</a>
                 </li>
             </ul>
         </article>
     </section>
     <section id="opinion" class="opinion-section section">
-        <h2 class="title">Ce qui est important pour moi</h2>
-        <p>Pour moi,&nbsp;un bon développeur Web est une personne à l’écoute de ses clients,&nbsp;qui fournit un design soigné et
+        <h2 class="title" data-animation="showUp">Ce qui est important pour moi</h2>
+        <p data-animation="showUp">Pour moi,&nbsp;un bon développeur Web est une personne à l’écoute de ses clients,&nbsp;qui fournit un design soigné et
             qui respect les normes&nbsp;/&nbsp;conventions des différents langages qu’il utilise,&nbsp;ainsi que l’accessibilité pour
             les personnes en situations de handicap.</p>
-        <ul class="opinion-wrapper">
+        <ul class="opinion-wrapper" data-animation="showUp">
             <li class="opinion-card">
                 <h3 class="opinion-title">Design Web</h3>
                 <p>Il est important de fournir un design complet et soigné aux clients afin qu’ils aient une bonne idée
@@ -170,26 +170,26 @@
         </ul>
     </section>
     <section class="skill-section section">
-        <h2 id="skills" class="title">Mes principales compétences</h2>
-        <p>Mes études m’ont donné les compétences essentielles pour le métier de développeur web.&nbsp;En voici 3 d’entres
+        <h2 id="skills" class="title" data-animation="showUp">Mes principales compétences</h2>
+        <p data-animation="showUp">Mes études m’ont donné les compétences essentielles pour le métier de développeur web.&nbsp;En voici 3 d’entres
             elles.</p>
         <article class="skills-wrapper base-container">
             <h3 class="hidden">Les compétences que j'ai aqcuis</h3>
             <figure class="skills-img-wrapper">
-                <img src="./img/article-section-img.webp" alt="code CSS">
+                <img src="./img/article-section-img.webp" alt="code CSS" data-animation="scaleUp">
                 <figcaption class="hidden">Code <abbr title="Cascading Style Sheets">CSS</abbr> dans un éditeur de texte</figcaption>
             </figure>
             <ul class="skills-list">
-                <li id="htmlSkill">
+                <li id="htmlSkill" data-animation="showUp">
                     <h3><abbr title="HyperText Markup Language">HTML</abbr></h3>
                     <p>Je veille aux bonnes pratiques en <abbr title="HyperText Markup Language">HTML</abbr>,&nbsp;priorisant l’accessibilité et la sémantique.</p>
                 </li>
-                <li id="cssSkill">
+                <li id="cssSkill" data-animation="showUp">
                     <h3><abbr title="Cascading Style Sheets">CSS3</abbr></h3>
                     <p>J’ai aussi acquis une bonne connaissance de base de <abbr title="Cascading Style Sheets">CSS3</abbr> et maitrise Flexbox ainsi que Grid
                         Layout.</p>
                 </li>
-                <li id="jsSkill">
+                <li id="jsSkill" data-animation="showUp">
                     <h3>JavaScript</h3>
                     <p>Je suis attentif à son utilisation,&nbsp;et exploite ses capacités en programmation orientée objet
                         (<abbr title="Programmation Orientée Objet">POO</abbr>).</p>
@@ -198,10 +198,10 @@
         </article>
     </section>
     <section class="formation-section section">
-        <h2 id="formation" class="title">Mes formations</h2>
-        <p>Les formations que j’ai suivies ont été fondamentales pour définir ma voie professionnelle.&nbsp;Elles m’ont
+        <h2 id="formation" class="title" data-animation="showUp">Mes formations</h2>
+        <p data-animation="showUp">Les formations que j’ai suivies ont été fondamentales pour définir ma voie professionnelle.&nbsp;Elles m’ont
             offert la clarté nécessaire pour trouver ma passion et déterminer la voie que je voulais suivre.</p>
-        <ul class="cards-list base-container">
+        <ul class="cards-list base-container" data-animation="showUp">
             <li id="eco" class="formation-card">
                 <h3 class="formation-title">Licence Économie</h3>
                 <small>Option Gestion</small>
@@ -240,7 +240,7 @@
             </li>
         </ul>
     </section>
-    <section class="footer-contact-section section">
+    <section class="footer-contact-section section" data-animation="showUp">
         <h2 class="hidden">Me contacter</h2>
         <article class="footer-contact-wrapper base-container">
             <ul class="footer-contact-list">
@@ -298,6 +298,7 @@
     </ul>
 </footer>
 <script src="./src/js/dropdown.js"></script>
+<script src="./src/js/animation.js"></script>
 <script src="./src/js/main.js"></script>
 </body>
 </html>
