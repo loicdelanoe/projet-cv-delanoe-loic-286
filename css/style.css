@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: "Fa solid 900";
-    src: url("../font/fa-solid-900.ttf");
+    src: url("../font/fa-solid-900.woff2");
 }
 
 @font-face {
     font-family: "Fa brands 400";
-    src: url("../font/fa-brands-400.ttf");
+    src: url("../font/fa-brands-400.woff2");
 }
 
 * {
