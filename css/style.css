@@ -499,15 +499,21 @@ img {
 /* OPINION SECTION */
 /*-----------------*/
 .opinion-section {
+    background-image: url("../img/opinion-background.webp");
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.opinion-article {
+    display: flex;
+    flex-direction: column;
     padding-right: 15px;
     padding-left: 15px;
     row-gap: 40px;
-    /*background-image: url("../img/opinion-background.webp");*/
-    /*background-position: left;*/
-    /*background-size: cover;*/
 }
 
-.section > p {
+article > p {
     font-size: 18px;
 }
 
@@ -1201,12 +1207,12 @@ footer form > label {
     }
 
     /* OPINION SECTION */
-    .opinion-section {
+    .opinion-article {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 60px;
         grid-row-gap: 80px;
-        padding: 80px 15px;
+        padding: 0 15px;
         max-width: 1200px;
         margin: auto;
         text-align: left;
