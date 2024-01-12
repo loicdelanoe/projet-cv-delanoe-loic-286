@@ -863,7 +863,7 @@ footer form > label {
 /* RESPONSIVE */
 /*------------*/
 
-@media screen and (479px <= width <= 767px) {
+@media screen and (479px <= width <= 747px) {
     .main-img {
         object-fit: contain;
     }
@@ -877,7 +877,7 @@ footer form > label {
     }
 }
 
-@media screen and (767px <= width <= 1050px) {
+@media screen and (747px <= width <= 1050px) {
     .section {
         padding: 80px 15px;
     }
