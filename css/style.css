@@ -294,7 +294,11 @@ nav.opened {
     overflow: hidden;
 }
 
-.dropdown-btn:hover .sub-list-wrapper, .dropdown-btn:active .sub-list-wrapper {
+.dropdown-btn:hover .sub-list-wrapper {
+    grid-template-rows: 1fr;
+}
+
+.expand-dropdown {
     grid-template-rows: 1fr;
 }
 
