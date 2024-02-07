@@ -122,8 +122,8 @@
         <h2 class="hidden" data-animation="showUp">À Propos</h2>
         <article class="about-info">
             <h2 class="hidden" data-animation="showUp">Un peu plus sur moi</h2>
-            <ul class="list-info base-container">
-                <li id="myProfil" class="img-wrapper">
+            <article class="list-info base-container">
+                <div id="myProfil" class="img-wrapper">
                     <figure class="main-img-wrapper">
                         <img class="main-img" src="./img/cv-site.jpg"
                              alt="Image d'un MacBook Pro sur une table blanche avec un livre noir et un stylo à coté"
@@ -140,15 +140,15 @@
                              data-animation="scaleUp">
                         <figcaption class="hidden">Diagram</figcaption>
                     </figure>
-                </li>
-                <li class="about-wrapper">
+                </div>
+                <div class="about-wrapper">
                     <h3 class="title" data-animation="showUp">Étudiant en développement Web</h3>
                     <p data-animation="showUp">Depuis mon adolescence,&nbsp;je suis passionné de web et de
                         programmation.&nbsp;Ma détermination m’incite à
                         persévérer sur chaque projet,&nbsp;sans jamais abandonner.</p>
                     <a class="about-link" href="#opinion" data-animation="showUp">En savoir plus sur moi</a>
-                </li>
-            </ul>
+                </div>
+            </article>
         </article>
     </section>
     <section id="opinion" class="opinion-section section">
@@ -262,13 +262,11 @@
     <section class="footer-contact-section section">
         <h2 class="hidden">Me contacter</h2>
         <article class="footer-contact-wrapper base-container">
-            <ul class="footer-contact-list" data-animation="showUp">
-                <li>
-                    <h3>Mon profil vous intéresse&nbsp;?</h3>
-                </li>
-                <li><p>N’hésitez pas à me contacter par mail,&nbsp;GSM,&nbsp;ou via le formulaire.</p></li>
-                <li><a href="#footerContact" class="cta primary">Contactez moi</a></li>
-            </ul>
+            <div class="footer-contact-list" data-animation="showUp">
+                <h3>Mon profil vous intéresse&nbsp;?</h3>
+                <p>N’hésitez pas à me contacter par mail,&nbsp;GSM,&nbsp;ou via le formulaire.</p>
+                <a href="#footerContact" class="cta primary">Contactez moi</a>
+            </div>
         </article>
     </section>
 </main>

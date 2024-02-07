@@ -668,6 +668,7 @@ time {
 
 .footer-contact-list {
     display: flex;
+    align-items: center;
     flex-direction: column;
     padding: 20px;
     border: 1px solid var(--dark-grey);
@@ -681,9 +682,14 @@ time {
 
 .footer-contact-section h3 {
     font-size: 32px;
+    width: 10em;
 }
 
-.footer-contact-list li:last-child {
+.footer-contact-list p {
+    width: 20em;
+}
+
+.footer-contact-list a:last-child {
     margin-top: 10px;
 }
 
@@ -964,9 +970,14 @@ footer form > label {
 
     .footer-contact-list {
         padding: 40px;
-        text-align: left;
         background-size: contain;
         background-position: right;
+    }
+
+    .footer-contact-list h3,
+    .footer-contact-list p {
+        width: auto;
+
     }
 
     .footer-list {
@@ -1295,6 +1306,7 @@ footer form > label {
     }
 
     .footer-contact-list {
+        align-items: flex-start;
         width: 100%;
         padding: 40px;
         text-align: left;
@@ -1375,11 +1387,7 @@ footer form > label {
         font-size: 34px;
     }
 
-    .footer-contact-list > li {
-        width: 30%;
-    }
-
-    .footer-contact-list > li:last-child {
+    .footer-contact-list > a:last-child {
         margin-top: 0;
     }
 
