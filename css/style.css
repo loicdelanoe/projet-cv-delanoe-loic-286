@@ -919,6 +919,11 @@ footer form > label {
         width: 100%;
     }
 
+    .main-img {
+        /*object-position: center;*/
+        object-position: top;
+    }
+
     .list-info {
         padding: 0;
     }

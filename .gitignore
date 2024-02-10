@@ -152,3 +152,6 @@ fabric.properties
 /package-lock.json
 /webpack.config.js
 /src/
+
+# Local Netlify folder
+.netlify
