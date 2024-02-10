@@ -147,11 +147,5 @@ fabric.properties
 # https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij
 .idea/**/azureSettings.xml
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,phpstorm
-/package.json
-/package-lock.json
-/webpack.config.js
-/src/
-
 # Local Netlify folder
 .netlify
