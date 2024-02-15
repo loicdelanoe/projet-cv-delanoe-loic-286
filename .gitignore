@@ -149,3 +149,5 @@ fabric.properties
 
 # Local Netlify folder
 .netlify
+
+index.backup.html

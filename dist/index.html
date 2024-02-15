@@ -2,106 +2,88 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords"
-          content="Développement Web, développement, programmation, code, HTML, CSS, CSS3, JavaScript, CV, Étudiant, projets">
-    <meta name="description"
-          content="Étudiant passionné de web et de programmation, je suis à la recherche d'opportunités pour mettre en pratique mes compétences en HTML, CSS, JavaScript et plus encore. Découvrez mon parcours, mes projets et mes aspirations dans le domaine du développement web sur mon site CV.">
-    <meta name="author" content="Loïc Delanoë">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Space+Grotesk:wght@300;400;500&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap"
           rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon-Cn43gt6l.jpg">
-    <title>Loïc D.</title>
-  <script type="module" crossorigin src="/assets/index-ByPQSIP_.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DUHtgbjM.css">
+    <title>Loïc D. - SCSS</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-Cq_BbqaG.css">
 </head>
 <body>
-<a class="top-btn" href="#header">Haut de la page</a>
-<header id="header">
-    <h1 class="hidden">Loïc Delanoë,&nbsp;Développeur web</h1>
-    <ul class="header__list">
-        <li>
-            <h2 class="header__list__title"><a href="index.html" title="Loïc D. - CV">Loïc D.</a></h2>
-        </li>
-        <li>
-            <button id="burgerButton" class="hidden">Open burger menu</button>
-            <nav id="mainNav" class="main-nav opened" role="navigation">
-                <h2 class="hidden">Navigation principale</h2>
-                <div class="burger-wrapper">
-                    <a class="header__list__title" href="index.html">Loïc D.</a>
-                    <button id="closeBurger" class="close-burger-button hidden">Close burger</button>
+<svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" display="none">
+    <symbol id="check">
+        <polyline points="6,11 15,20 30,5" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"
+                  stroke-linecap="round"/>
+    </symbol>
+</svg>
+<header>
+    <h1 class="hidden">Accueil</h1>
+    <nav class="nav">
+        <h2 class="hidden">Navigation principale</h2>
+        <a class="nav__title" href="/">Loïc D.</a>
+        <label class="hidden" for="burger__toggle">Menu dépliant</label>
+        <input type="checkbox" name="burger-toggle" id="burger__toggle">
+        <div class="burger__wrapper">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav__list">
+            <li><a class="nav__list__link" href="/">Accueil</a></li>
+            <li class="nav__list__wrapper">
+                <span class="nav__list__link" tabindex="0">À Propos</span>
+                <div class="sub__list__wrapper">
+                    <ul class="sub__list">
+                        <li><a class="sub__list__link" href="#coordonnees">Coordonnées</a></li>
+                        <li><a class="sub__list__link" href="#profile">Mon Profil</a></li>
+                    </ul>
                 </div>
-                <ul class="main-list">
-                    <li><h3><a class="main-link" href="#header" title="Aller vers l'accueil">Accueil</a></h3></li>
-                    <li class="dropdown-wrapper" data-id="one">
-                        <h3>
-                            À Propos
-                        </h3>
-                        <div class="sub-list-wrapper expand-dropdown" id="one">
-                            <ul class="sub-list">
-                                <li>
-                                    <a href="#coordonnees" class="sub-list-link" title="Aller vers mes coordonnées">Coordonnées</a>
-                                </li>
-                                <li>
-                                    <a href="#myProfil" class="sub-list-link" title="Aller vers mon profil">Mon
-                                        Profil</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="dropdown-wrapper" data-id="three"><h3>Compétences</h3>
-                        <div class="sub-list-wrapper expand-dropdown" id="three">
-                            <ul class="sub-list">
-                                <li><a class="sub-list-link" href="#skills"
-                                       title="Aller vers les compétences HTML">HTML</a></li>
-                                <li><a class="sub-list-link" href="#skills"
-                                       title="Aller vers les compétences CSS">CSS</a></li>
-                                <li><a class="sub-list-link" href="#skills"
-                                       title="Aller vers les compétences JavaScript">JavaScript</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="dropdown-wrapper" data-id="two"><h3>Formations</h3>
-                        <div class="sub-list-wrapper expand-dropdown" id="two">
-                            <ul class="sub-list">
-                                <li><a class="sub-list-link" href="#formation" title="Aller vers mes coordonnées">Baccalauréat</a>
-                                </li>
-                                <li><a class="sub-list-link" href="#formation"
-                                       title="Aller vers mon profil">Économie</a></li>
-                                <li><a class="sub-list-link" href="#formation" title="Aller vers mon profil">Web</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="btn-list">
-                    <li><a href="#" class="cta secondary" title="Consulter mon blog">Blog</a></li>
-                    <li><a href="#footerContact" class="cta primary" title="Vers le formulaire de contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </li>
-    </ul>
+            </li>
+            <li class="nav__list__wrapper">
+                <span class="nav__list__link" tabindex="0">Compétences</span>
+                <div class="sub__list__wrapper">
+                    <ul class="sub__list">
+                        <li><a class="sub__list__link" href="">HTML</a></li>
+                        <li><a class="sub__list__link" href="">CSS</a></li>
+                        <li><a class="sub__list__link" href="">JavaScript</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav__list__wrapper">
+                <span class="nav__list__link" tabindex="0">Formations</span>
+                <div class="sub__list__wrapper">
+                    <ul class="sub__list">
+                        <li><a class="sub__list__link" href="">Baccalauréat</a></li>
+                        <li><a class="sub__list__link" href="">Économie</a></li>
+                        <li><a class="sub__list__link" href="">Web</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="cta secondary" href="">Blog</a>
+                <a class="cta primary" href="">Contact</a>
+            </li>
+        </ul>
+    </nav>
 </header>
-<main itemscope itemtype="https://schema.org/Person">
-    <section id="hero" class="hero-section">
-        <h2 class="hero-title" data-animation="showUp">
+<main>
+    <section id="hero" class="hero" itemtype="https://schema.org/Person">
+        <h2 class="hero__title" data-animation="showUp">
             <span itemprop="name">Loïc</span> <span itemprop="familyName">Delanoë</span>, Développeur Web
         </h2>
-        <a href="#myProfil" class="cta primary" title="En savoir plus sur moi" data-animation="showUp">Découvrez moi</a>
+        <a href="/" class="cta primary" title="En savoir plus sur moi" data-animation="showUp">Découvrez moi</a>
     </section>
-    <section id="contact" class="contact-section">
-        <ul class="contact-list">
+    <section id="contact" class="contact">
+        <ul class="contact__list base-container">
             <li id="coordonnees" data-animation="showUp">
-                <h3 class="contact-title">Contact</h3>
+                <h3 class="contact__list__title">Contact</h3>
                 <address itemprop="telephone">Téléphone&nbsp;:&nbsp;
                     <a class="telephone" href="tel:+33604014765">+ 33 (0)6 04 01 47 65</a>
                 </address>
             </li>
             <li data-animation="showUp">
-                <h3 class="contact-title">Coordonnées</h3>
+                <h3 class="contact__list__title">Coordonnées</h3>
                 <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                     <span itemprop="streetAddress">Rue Hullos,&nbsp;69</span>,
                     <span itemprop="postalCode">4000</span>
@@ -110,71 +92,60 @@
             </li>
             <li data-animation="showUp">
                 <div class="contact-mail-wrapper">
-                    <h3 class="contact-title">Mon email</h3>
+                    <h3 class="contact__list__title">Mon Email</h3>
                     <a href="mailto:loic.del4127@gmail.com" itemprop="email"
                        class="contact-mail">loic.del4127@gmail.com</a>
                 </div>
-                <a href="#footerContact" class="cta primary">Contactez moi</a>
+                <a href="/" class="cta primary">Contactez moi</a>
             </li>
         </ul>
     </section>
-    <section id="about" class="about-section section">
+    <section id="about" class="about section">
         <h2 class="hidden" data-animation="showUp">À Propos</h2>
-        <article class="about-info">
+        <article class="about__info">
             <h2 class="hidden" data-animation="showUp">Un peu plus sur moi</h2>
-            <div class="list-info base-container">
-                <div id="myProfil" class="img-wrapper">
-                    <figure class="main-img-wrapper">
-                        <img class="main-img" src="/assets/cv-site-DgT0cZwj.jpg"
-                             alt="Image d'un MacBook Pro sur une table blanche avec un livre noir et un stylo à coté"
-                             width="474" height="632" data-animation="showUp">
-                        <figcaption class="hidden">Un MacBook Pro sur une table avec un livre et un stylo</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="secondary-img" src="data:image/webp;base64,UklGRuYDAABXRUJQVlA4INoDAADQGACdASrzAFwAPm02l0kkIyIhIRVaEIANiWlu3V/jzeZF1IG+ftL7rFwz+r8Rukawu/Uz+gPQB9M+wP/KP69/xewl+yvswfsAL0njh0qBIm+M/4UKONNic9SYwT7lsD8wO3ve5lywtUOo2xYsrklkPxcrFO63MIAq8nfVf+4oggfcKuufIFGwKty/IJsXUiv4Zl2ImU/7z2ZFNXb15k+W5hQvFWnUM85/Ok2DZ9UeNs81C/UtI6gHFLB5iFxkPvajp7g40fLp+3wCz+YHMAAA/vxKAAG+SyqTfhGrp0RsfQHh7es9KdWE9SA/DnWDIOiJczGrDBWTCH7fIQC09+vTHWm/xdv0agY1PQ/n/UZuodKPNgh2fQ9rLNUW8oxgfdNAdqFIkob5x38rgC3r2DYokM12ydh35Kl+1TVgPXYbvNWT7jY3m4TNBAH+UPf6/agvz3+Y//3ABAEfk+YppQTa7f6Q19v9xb90D5kpTYRb09H+7XMV8Wd/CCQpy9v+KPC/X9bpiAhCKe//8gvsY4THnq4U591EdzsdbbZA2pGJX4WwoNgoClGqafWTGxnEexnWWApFRIYi9XiZ+vQgngQuABGB9vHQIM1A2pkG+4w6yz5RR41w3DUQMFvvrXAgcE9k/gK4AF4IpjwdCfKLjhOffWBjU9b/td2X/mdgqzf5Sba67p4G9Tn7qSO/npJRsn35Y+y7cpZGR/GT6PLrO9jJlUu0tf3TW13dre8r2rrkIh+EqqJ14r//p7trHGzvEiSdvZfKuTP3+dVr71GEuGNa9uT8EcIK9/eQyEGd4eMqiJD+ApwF/Pkuiv8tfvg2tAOmYt4JI4bfiSH9/j9mfGqEEp43/CL2SAOs8hU/MI9+V7YPhH14B21kw1Wuk9nbj+18lYqsUR4WnumxjD8foPKQxZJPb8sw9QbNat14v52eDrDDCaNNd/1nlricO4RtXM2WHcA6G+GBY21e63s9MPDUh0wstg+X2ny2DehuwNeMcjodMx/JE0ygRTC7vXztMueVuW2Gc3omDmMTJl5jL30ByTR6Wwlu+w5AI/GF7DAJI78qKrtLWdoq8NJlv3sibWXaQq5XAQsBcfYGvGWAzXo/G2g3H100XlhTr6XWvFW+WEV4uu4Va4k3PzwIdBYR8MD3Wxp6K5J1OTxu832K1T+cFxFckLsG4DAQGlF44HUcusKtPasQMu5+LNua5er1E3wQ+w5Z3MLuBs2Jz2jnfpBGTnlKJVnu3+9PZfk4cr+ZPOnHMUDTxyGnTlvGvOj0FsIYqPn0B9FYQI2II0+nmK0Vju4BAAAAAAAAAA==" alt="Diagram avec le nombre 185"
-                             data-animation="scaleUp">
-                        <figcaption class="hidden">Diagram</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="third-img" src="data:image/webp;base64,UklGRjoFAABXRUJQVlA4IC4FAABQIACdASrzAFwAPm00l0gkIqIhJrM5QIANiWlu4XHRxq/Sn+odW/ocvF0psj//AeTP+W8Afej+5fkz6mf7h+UHBBgA/If6l/d/zY8YD0L0i+QD1Rf4v/l/5D8vPZ9+bf4f9hfgE/l39Q/4X5x/4L5l/Xt+0Pst/sAR7MzMzMzMzMxr1YRGLFaX8orxDowMbTql8t33VmmVTdv2HlPbP1ZQm5h7h7LQ2z+rA8XWsU+FTLTHFPPxHVcRtYdNJCLfuG/UU+WKN4Pujt1YfSHVuW8ouYVj7POv3uP+3t4je2YFRDI75gMIc+fIUn93JEHcvN5VCGze5I7dSBxgTjXVVVVVVVVVVVVVVVVVIAAA/v9fwEJ/+E2zw78ju9+Kyed/nzw6P3UAdpneGQv6zOK1RRQHArH0azbZ3LB4cLXYKH/I2I51uTnCtZcwdXCiE/ukb2DWQri61TplrwlNvUCbqbWFh2m1USiNxb/EStpfp9admqtYHEMlzywgmYh7Y68nUCs/6KCJJ4ekng7CUk33mfH5PngTX7T/4URKTrontmxLogrLUOe8F7jps8SF9o0QFyep1ICdzWV9kPQdaAVYk/gD/ZUxmN8sD3cfPeVS8QLczWiVmE55JxL4VlwUO9gNovSLryxcpQ1viD+LYjhSGR3amfetn+VX5t/tPIApDAYukNrVLhLY8VvmbL9dvl9vQd9y/EJfg9YK0HqcKi5cD4O313V4vfD3l/+T9K4h1eyESwJEwXMwsvY2QEkT1sCxXCnGeNRw4vPWc4qUjYGkI9zYdUsqjzWZ+RbVQ2D+2BfYOQjXy7nXSh/Tva9wS9Nav7mlb9WXsoUJ1nYNIF1aQJaBP7ub6jN1e71d0cdG0rDW2tDageP8BTFulNjSdG94pcZf9JOUOmEbWLT6cVvGFkyzEYGPD5e6l81P/TnvYaa5U0A+UhJC40omRUhjCXunUWLle7HJN0aTsXbyRCGmPwvjo5cPeOyVOCOJE0/0bCUS1yRJSzmyIYK7NezA67sZpTzzWUbp8nPaylBAYn+rv3b/KTHa8Dn7qlgsEAtYiILm3M5JNYuLzVVNMsyd2P2+HHz/s4FWR45L+x/OwDynivDqS/x7Wb8x70KKutXNv3JVuDNbYT0XHqfaQzKiW33806CSgTXxmcr+GFRSXi/ffdL7ZiGDYszI3dhAV9y4bjQMa6PQUKfOlgtVTpNyDFzOKrt0/x78PxrLi1ZenOzsE7fxaEJzQ4YQoojl4NPzYMY24DuPeeMJzNhibBgkpRRlOHs4/AErPaWtp94pMOBhE1mGh8Gkvb3pj2Wa9G/PWNiFZ6H5E57sjpRwPDi4HA1Uitv1vW2kdbWCL16Kl2IZ+0D10w4AjaYnKwqny+V+JX7THKETGynih4GDYtVN02OTvqthH9PQPoT1dz4lR/5xRvff7ER01Cujp1Ru9Lh3c+3UAPD29rUGqMrd+IdWoCJsWyk4dAJPZKO/8o440i5SrBL3wi1mP8vfYvgFzC9aIwcu1wSUMZ8X69zShxfQGJyYvl95wuYoh1zIlnNDRpY0Cc2lL+19/cz12YQAWQuDdefedg0K/rqUdsNcy3m7mr2zwWAAsmmQ50EgmWWvFmrHMRV0KT4I2YTC6/2m5x7pAlqL1gans6MxkyQ/k2+IwlF9u04vDRLG6CllBbR/LKKzPzKIfl4EbI+JlqhNIvSjXYQJYEMaqdIDJYHFc1R76BwzDWgKf2+rnSGyIgywVDx05QNPlM7zYLzaWt9KS6AAAAA=" alt="Diagram avec le nombre 250"
-                             data-animation="scaleUp">
-                        <figcaption class="hidden">Diagram</figcaption>
-                    </figure>
-                </div>
-                <div class="about-wrapper">
-                    <h3 class="title" data-animation="showUp">Étudiant en développement Web</h3>
-                    <p data-animation="showUp">Depuis mon adolescence,&nbsp;je suis passionné de web et de
-                        programmation.&nbsp;Ma détermination m’incite à
-                        persévérer sur chaque projet,&nbsp;sans jamais abandonner.</p>
-                    <a class="about-link" href="#opinion" data-animation="showUp">En savoir plus sur moi</a>
-                </div>
+            <div id="profile" class="img">
+                <img class="img__main" src="/assets/cv-site-DgT0cZwj.jpg"
+                     alt="Homme travaillant devant son ordinateur"
+                     width="474" height="632" data-animation="showUp">
+                <img class="img__secondary" src="data:image/webp;base64,UklGRuYDAABXRUJQVlA4INoDAADQGACdASrzAFwAPm02l0kkIyIhIRVaEIANiWlu3V/jzeZF1IG+ftL7rFwz+r8Rukawu/Uz+gPQB9M+wP/KP69/xewl+yvswfsAL0njh0qBIm+M/4UKONNic9SYwT7lsD8wO3ve5lywtUOo2xYsrklkPxcrFO63MIAq8nfVf+4oggfcKuufIFGwKty/IJsXUiv4Zl2ImU/7z2ZFNXb15k+W5hQvFWnUM85/Ok2DZ9UeNs81C/UtI6gHFLB5iFxkPvajp7g40fLp+3wCz+YHMAAA/vxKAAG+SyqTfhGrp0RsfQHh7es9KdWE9SA/DnWDIOiJczGrDBWTCH7fIQC09+vTHWm/xdv0agY1PQ/n/UZuodKPNgh2fQ9rLNUW8oxgfdNAdqFIkob5x38rgC3r2DYokM12ydh35Kl+1TVgPXYbvNWT7jY3m4TNBAH+UPf6/agvz3+Y//3ABAEfk+YppQTa7f6Q19v9xb90D5kpTYRb09H+7XMV8Wd/CCQpy9v+KPC/X9bpiAhCKe//8gvsY4THnq4U591EdzsdbbZA2pGJX4WwoNgoClGqafWTGxnEexnWWApFRIYi9XiZ+vQgngQuABGB9vHQIM1A2pkG+4w6yz5RR41w3DUQMFvvrXAgcE9k/gK4AF4IpjwdCfKLjhOffWBjU9b/td2X/mdgqzf5Sba67p4G9Tn7qSO/npJRsn35Y+y7cpZGR/GT6PLrO9jJlUu0tf3TW13dre8r2rrkIh+EqqJ14r//p7trHGzvEiSdvZfKuTP3+dVr71GEuGNa9uT8EcIK9/eQyEGd4eMqiJD+ApwF/Pkuiv8tfvg2tAOmYt4JI4bfiSH9/j9mfGqEEp43/CL2SAOs8hU/MI9+V7YPhH14B21kw1Wuk9nbj+18lYqsUR4WnumxjD8foPKQxZJPb8sw9QbNat14v52eDrDDCaNNd/1nlricO4RtXM2WHcA6G+GBY21e63s9MPDUh0wstg+X2ny2DehuwNeMcjodMx/JE0ygRTC7vXztMueVuW2Gc3omDmMTJl5jL30ByTR6Wwlu+w5AI/GF7DAJI78qKrtLWdoq8NJlv3sibWXaQq5XAQsBcfYGvGWAzXo/G2g3H100XlhTr6XWvFW+WEV4uu4Va4k3PzwIdBYR8MD3Wxp6K5J1OTxu832K1T+cFxFckLsG4DAQGlF44HUcusKtPasQMu5+LNua5er1E3wQ+w5Z3MLuBs2Jz2jnfpBGTnlKJVnu3+9PZfk4cr+ZPOnHMUDTxyGnTlvGvOj0FsIYqPn0B9FYQI2II0+nmK0Vju4BAAAAAAAAAA==" alt="Diagram avec le nombre 185"
+                     data-animation="scaleUp">
+                <img class="img__third" src="data:image/webp;base64,UklGRjoFAABXRUJQVlA4IC4FAABQIACdASrzAFwAPm00l0gkIqIhJrM5QIANiWlu4XHRxq/Sn+odW/ocvF0psj//AeTP+W8Afej+5fkz6mf7h+UHBBgA/If6l/d/zY8YD0L0i+QD1Rf4v/l/5D8vPZ9+bf4f9hfgE/l39Q/4X5x/4L5l/Xt+0Pst/sAR7MzMzMzMzMxr1YRGLFaX8orxDowMbTql8t33VmmVTdv2HlPbP1ZQm5h7h7LQ2z+rA8XWsU+FTLTHFPPxHVcRtYdNJCLfuG/UU+WKN4Pujt1YfSHVuW8ouYVj7POv3uP+3t4je2YFRDI75gMIc+fIUn93JEHcvN5VCGze5I7dSBxgTjXVVVVVVVVVVVVVVVVVIAAA/v9fwEJ/+E2zw78ju9+Kyed/nzw6P3UAdpneGQv6zOK1RRQHArH0azbZ3LB4cLXYKH/I2I51uTnCtZcwdXCiE/ukb2DWQri61TplrwlNvUCbqbWFh2m1USiNxb/EStpfp9admqtYHEMlzywgmYh7Y68nUCs/6KCJJ4ekng7CUk33mfH5PngTX7T/4URKTrontmxLogrLUOe8F7jps8SF9o0QFyep1ICdzWV9kPQdaAVYk/gD/ZUxmN8sD3cfPeVS8QLczWiVmE55JxL4VlwUO9gNovSLryxcpQ1viD+LYjhSGR3amfetn+VX5t/tPIApDAYukNrVLhLY8VvmbL9dvl9vQd9y/EJfg9YK0HqcKi5cD4O313V4vfD3l/+T9K4h1eyESwJEwXMwsvY2QEkT1sCxXCnGeNRw4vPWc4qUjYGkI9zYdUsqjzWZ+RbVQ2D+2BfYOQjXy7nXSh/Tva9wS9Nav7mlb9WXsoUJ1nYNIF1aQJaBP7ub6jN1e71d0cdG0rDW2tDageP8BTFulNjSdG94pcZf9JOUOmEbWLT6cVvGFkyzEYGPD5e6l81P/TnvYaa5U0A+UhJC40omRUhjCXunUWLle7HJN0aTsXbyRCGmPwvjo5cPeOyVOCOJE0/0bCUS1yRJSzmyIYK7NezA67sZpTzzWUbp8nPaylBAYn+rv3b/KTHa8Dn7qlgsEAtYiILm3M5JNYuLzVVNMsyd2P2+HHz/s4FWR45L+x/OwDynivDqS/x7Wb8x70KKutXNv3JVuDNbYT0XHqfaQzKiW33806CSgTXxmcr+GFRSXi/ffdL7ZiGDYszI3dhAV9y4bjQMa6PQUKfOlgtVTpNyDFzOKrt0/x78PxrLi1ZenOzsE7fxaEJzQ4YQoojl4NPzYMY24DuPeeMJzNhibBgkpRRlOHs4/AErPaWtp94pMOBhE1mGh8Gkvb3pj2Wa9G/PWNiFZ6H5E57sjpRwPDi4HA1Uitv1vW2kdbWCL16Kl2IZ+0D10w4AjaYnKwqny+V+JX7THKETGynih4GDYtVN02OTvqthH9PQPoT1dz4lR/5xRvff7ER01Cujp1Ru9Lh3c+3UAPD29rUGqMrd+IdWoCJsWyk4dAJPZKO/8o440i5SrBL3wi1mP8vfYvgFzC9aIwcu1wSUMZ8X69zShxfQGJyYvl95wuYoh1zIlnNDRpY0Cc2lL+19/cz12YQAWQuDdefedg0K/rqUdsNcy3m7mr2zwWAAsmmQ50EgmWWvFmrHMRV0KT4I2YTC6/2m5x7pAlqL1gans6MxkyQ/k2+IwlF9u04vDRLG6CllBbR/LKKzPzKIfl4EbI+JlqhNIvSjXYQJYEMaqdIDJYHFc1R76BwzDWgKf2+rnSGyIgywVDx05QNPlM7zYLzaWt9KS6AAAAA=" alt="Diagram avec le nombre 250"
+                     data-animation="scaleUp">
+            </div>
+            <div class="about__wrapper">
+                <h3 class="title" data-animation="showUp">Étudiant en développement Web</h3>
+                <p data-animation="showUp">Depuis mon adolescence,&nbsp;je suis passionné de web et de
+                    programmation.&nbsp;Ma détermination m’incite à
+                    persévérer sur chaque projet,&nbsp;sans jamais abandonner.</p>
+                <a class="about__link" href="#opinion" data-animation="showUp">En savoir plus sur moi</a>
             </div>
         </article>
     </section>
-    <section id="opinion" class="opinion-section section">
+    <section id="opinion" class="opinion section">
         <h2 class="hidden">Ma façon de travailler</h2>
-        <article class="opinion-article">
+        <article class="opinion__wrapper">
             <h2 class="title" data-animation="showUp">Ce qui est important pour moi</h2>
             <p data-animation="showUp">Pour moi,&nbsp;un bon développeur Web est une personne à l’écoute de ses clients,&nbsp;qui
                 fournit un design soigné et
                 qui respect les normes&nbsp;/&nbsp;conventions des différents langages qu’il utilise,&nbsp;ainsi que
                 l’accessibilité pour
                 les personnes en situations de handicap.</p>
-            <ul class="opinion-wrapper">
-                <li class="opinion-card" data-animation="showUp">
-                    <h3 class="opinion-title">Design Web</h3>
+            <ul class="opinion__wrapper__list">
+                <li class="opinion__card" data-animation="showUp">
+                    <h3 class="opinion__card__title">Design Web</h3>
                     <p>Il est important de fournir un design complet et soigné aux clients afin qu’ils aient une bonne
                         idée
                         de ce que leur site va donner quand il sera déployé.</p>
                 </li>
-                <li class="opinion-card" data-animation="showUp">
-                    <h3 class="opinion-title">Développement Web</h3>
+                <li class="opinion__card" data-animation="showUp">
+                    <h3 class="opinion__card__title">Développement Web</h3>
                     <p>Après le design, le développement est tout aussi important,&nbsp;mais surtout le respect des
                         normes&nbsp;/&nbsp;conventions
                         des langages&nbsp;(sémantique en HTML).</p>
                 </li>
-                <li class="opinion-card" data-animation="showUp">
-                    <h3 class="opinion-title">Accessibilité</h3>
+                <li class="opinion__card" data-animation="showUp">
+                    <h3 class="opinion__card__title">Accessibilité</h3>
                     <p>L’accessibilité d’un site web est cruciale,&nbsp;en effet n’importe quel site internet doit être
                         pensé
                         aussi pour les personnes en situation de handicap.</p>
@@ -182,32 +153,31 @@
             </ul>
         </article>
     </section>
-    <section class="skill-section section">
+    <section class="skill section">
         <h2 id="skills" class="title" data-animation="showUp">Mes principales compétences</h2>
         <p data-animation="showUp">Mes études m’ont donné les compétences essentielles pour le métier de développeur
             web.&nbsp;En voici 3 d’entres
             elles.</p>
-        <article class="skills-wrapper base-container">
+        <article class="skill__wrapper">
             <h3 class="hidden">Les compétences que j'ai aqcuis</h3>
-            <figure class="skills-img-wrapper">
-                <img src="/assets/skill-img-update-BpACp-3V.jpg" alt="code CSS" data-animation="scaleUp" width="1600" height="836">
-                <figcaption class="hidden">Code <abbr title="Cascading Style Sheets">CSS</abbr> dans un éditeur de texte
-                </figcaption>
-            </figure>
-            <ul class="skills-list">
+            <div class="skills-img-wrapper">
+                <img src="/assets/skill-img-update-BpACp-3V.jpg" alt="code HTML dans un éditeur de texte" data-animation="scaleUp"
+                     width="1600" height="836">
+            </div>
+            <ul class="skill__list">
                 <li id="htmlSkill" data-animation="showUp">
-                    <h3><abbr title="HyperText Markup Language">HTML</abbr></h3>
+                    <h3 class="skill__wrapper__list__title"><abbr title="HyperText Markup Language">HTML</abbr></h3>
                     <p>Je veille aux bonnes pratiques en <abbr title="HyperText Markup Language">HTML</abbr>,&nbsp;priorisant
                         l’accessibilité et la sémantique.</p>
                 </li>
                 <li id="cssSkill" data-animation="showUp">
-                    <h3><abbr title="Cascading Style Sheets">CSS3</abbr></h3>
+                    <h3 class="skill__wrapper__list__title"><abbr title="Cascading Style Sheets">CSS3</abbr></h3>
                     <p>J’ai aussi acquis une bonne connaissance de base de <abbr
                             title="Cascading Style Sheets">CSS3</abbr> et maitrise Flexbox ainsi que Grid
                         Layout.</p>
                 </li>
                 <li id="jsSkill" data-animation="showUp">
-                    <h3>JavaScript</h3>
+                    <h3 class="skill__wrapper__list__title">JavaScript</h3>
                     <p>Je suis attentif à son utilisation,&nbsp;et exploite ses capacités en programmation orientée
                         objet
                         (<abbr title="Programmation Orientée Objet">POO</abbr>).</p>
@@ -215,41 +185,41 @@
             </ul>
         </article>
     </section>
-    <section class="formation-section section">
+    <section class="formation section">
         <h2 id="formation" class="title" data-animation="showUp">Mes formations</h2>
         <p data-animation="showUp">Les formations que j’ai suivies ont été fondamentales pour définir ma voie
             professionnelle.&nbsp;Elles m’ont
             offert la clarté nécessaire pour trouver ma passion et déterminer la voie que je voulais suivre.</p>
-        <ul class="cards-list base-container">
-            <li id="eco" class="formation-card" data-animation="showUp">
-                <h3 class="formation-title">Licence Économie</h3>
+        <ul class="formation__list">
+            <li id="eco" class="formation__list__card" data-animation="showUp">
+                <h3 class="formation__list__card__title">Licence Économie</h3>
                 <small>Option Gestion</small>
                 <time>2021</time>
                 <a href="https://www.univ-tours.fr/" class="cta primary">Université de Tours</a>
-                <ul class="formation-list">
+                <ul class="card__list">
                     <li>Comprendre les marchés</li>
                     <li>Gestion d’entreprise</li>
                     <li>Statistiques appliquées</li>
                 </ul>
             </li>
-            <li class="formation-card alternative" data-animation="showUp">
-                <h3 class="formation-title">Bachelier Infographie</h3>
+            <li class="formation__list__card alternative" data-animation="showUp">
+                <h3 class="formation__list__card__title">Bachelier Infographie</h3>
                 <small>Option Web</small>
                 <time>2023</time>
                 <a href="https://www.hepl.be/fr" class="cta third">HEPL</a>
-                <ul class="formation-list">
+                <ul class="card__list">
                     <li>Sens de la créativité</li>
                     <li>Photoshop,&nbsp;Illustrator</li>
                     <li>Modélisation 3D</li>
                     <li>Programmation</li>
                 </ul>
             </li>
-            <li class="formation-card" data-animation="showUp">
-                <h3 class="formation-title">Baccalauréat</h3>
+            <li class="formation__list__card" data-animation="showUp">
+                <h3 class="formation__list__card__title">Baccalauréat</h3>
                 <small>Option Mathématiques&nbsp;/&nbsp;LLCE</small>
                 <time>2022</time>
                 <a href="https://www.lyceeronsard.eu/" class="cta primary">Lycée Ronsard</a>
-                <ul class="formation-list">
+                <ul class="card__list">
                     <li>Mathématiques</li>
                     <li>Analyse de texte</li>
                     <li>Gestion du stress</li>
@@ -259,35 +229,33 @@
             </li>
         </ul>
     </section>
-    <section class="footer-contact-section section">
+    <section class="footer__contact section">
         <h2 class="hidden">Me contacter</h2>
-        <article class="footer-contact-wrapper base-container">
-            <div class="footer-contact-list" data-animation="showUp">
-                <h3>Mon profil vous intéresse&nbsp;?</h3>
-                <p>N’hésitez pas à me contacter par mail,&nbsp;GSM,&nbsp;ou via le formulaire.</p>
-                <a href="#footerContact" class="cta primary">Contactez moi</a>
-            </div>
+        <article class="footer__contact__list" data-animation="showUp">
+            <h3>Mon profil vous intéresse&nbsp;?</h3>
+            <p>N’hésitez pas à me contacter par mail,&nbsp;GSM,&nbsp;ou via le formulaire.</p>
+            <a href="#footerContact" class="cta primary">Contactez moi</a>
         </article>
     </section>
 </main>
 <footer>
     <h2 class="hidden">Footer</h2>
-    <nav class="footer-nav">
-        <h3 class="header__list__title"><a href="#" title="Retour à la page d'accueil">Loïc D.</a></h3>
-        <ul class="footer-list">
+    <nav class="footer__nav">
+        <h3><a class="nav__title footer__nav__title" href="#" title="Retour à la page d'accueil">Loïc D.</a></h3>
+        <ul class="footer__nav__list">
             <li><a href="#">Accueil</a></li>
             <li><a href="#about">À Propos</a></li>
             <li><a href="#formation">Formations</a></li>
             <li><a href="#skills">Compétences</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <ul class="social-list">
-            <li><a href="https://www.facebook.com" class="social-button facebook">Facebook</a></li>
-            <li><a href="https://www.instagram.com" class="social-button instagram">Instagram</a></li>
-            <li><a href="https://www.twitter.com" class="social-button twitter">Twitter</a></li>
+        <ul class="social__list">
+            <li><a href="https://www.facebook.com" class="social__button facebook">Facebook</a></li>
+            <li><a href="https://www.instagram.com" class="social__button instagram">Instagram</a></li>
+            <li><a href="https://www.twitter.com" class="social__button twitter">Twitter</a></li>
         </ul>
     </nav>
-    <ul class="contact-list footer">
+    <ul class="contact__list footer">
         <li>
             <h3>Contact</h3>
             <address>Téléphone&nbsp;:&nbsp;
@@ -314,5 +282,6 @@
         </li>
     </ul>
 </footer>
+</main>
 </body>
 </html>
