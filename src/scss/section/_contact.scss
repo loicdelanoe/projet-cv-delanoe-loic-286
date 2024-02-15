@@ -1,0 +1,32 @@
+.contact {
+  padding: 50px 15px 45px 15px;
+  border-bottom: 1px solid $gray;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    &__title {
+      font-size: 17px;
+      text-align: center;
+    }
+
+    & > li {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  }
+}
+
+
+.contact-mail-wrapper {
+  margin-bottom: 20px;
+}
+
+.contact-mail {
+  color: $white;
+  margin: 10px 0;
+}

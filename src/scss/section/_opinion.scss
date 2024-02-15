@@ -1,0 +1,43 @@
+@import '../var';
+
+.opinion {
+  background-image: url("../../img/opinion-background.webp");
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    & > p {
+      font-size: 18px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      grid-row-gap: 16px;
+    }
+  }
+}
+
+.opinion__card {
+  padding: 1.563em; /* 25 / 16 */
+  border: 1px solid $gray;
+  border-radius: 7px;
+  background-color: $black;
+
+  &__title {
+    margin-top: 0;
+    display: inline-block;
+    font-size: 1.25em;
+    background-color: #282828;
+    margin-bottom: 1em;
+    padding: 1em 1em;
+    border-radius: 7px;
+  }
+}
+
+

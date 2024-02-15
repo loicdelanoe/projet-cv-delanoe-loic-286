@@ -1,0 +1,86 @@
+@import '../var';
+
+.formation {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 0;
+  border-bottom: none;
+
+  & > p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+}
+
+.formation__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25em 2.5em; /* 20 / 16 et 40 / 16 */
+    border-radius: 7px;
+    border: 1px solid $gray;
+    color: $white;
+    text-align: left;
+
+    &__title {
+      font-size: 1.375em; /* 22 / 16 */
+      line-height: 1.15em;
+      margin-bottom: 0.455em; /* 10 / 22 */
+    }
+
+    & a {
+      margin: 1.313em 0;
+    }
+  }
+
+}
+
+small {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1em;
+  line-height: 1.438em; /* 23 / 16 */
+  color: $light_gray;
+  margin: 0 0 1.25em 0; /* 20 / 16 */
+}
+
+time {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 3.5em; /* 56 / 16 */
+  font-weight: 400;
+  padding-bottom: 0.357em; /* 20 / 56 */
+  border-bottom: 1px solid $gray;
+}
+
+.card__list {
+  list-style-type: initial;
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-top: 1px solid $gray;
+  padding-top: 1.25em; /* 20 / 16 */
+
+  & > li {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.125em; /* 18 / 16 */
+    color: $light_gray;
+    margin: 0.556em 0; /* 10 / 18 */
+  }
+}
+
+.alternative {
+  background-color: $white;
+  color: $black;
+
+  & h3,
+  & ul li,
+  & small {
+    color: $black;
+  }
+}
+

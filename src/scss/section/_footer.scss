@@ -1,0 +1,72 @@
+@import "../var";
+
+.footer {
+  padding: 30px 15px;
+  border-top: 1px solid $gray;
+
+  &__nav {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 35px 40px 35px;
+    row-gap: 20px;
+
+    & > h3 {
+      margin: 0 0 40px 0;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+
+      & a {
+        padding: 10px 0;
+        width: 100%;
+        font-size: 1.375em;
+        line-height: 1.16em;
+        transition: .3s;
+      }
+    }
+  }
+}
+
+.social__list {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  width: 100%;
+  column-gap: 30px;
+}
+
+.social__button {
+  display: inline-flex;
+  font-size: 1.125em; /* 18 / 16 */
+  text-indent: -9999px;
+  min-width: 1.944em; /* 35 / 18 */
+  line-height: 1.944em; /* 35 / 18 */
+  border: 1px solid $white;
+  border-radius: 7px;
+  transition: .3s;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  & > label {
+    font-family: "Space Grotesk", sans-serif;
+    margin-top: 10px;
+    color: $light_gray;
+  }
+
+  & > input {
+    margin: 0.625em 0; /* 10 / 16 */
+    width: 100%;
+    max-width: inherit;
+  }
+
+  & > button {
+    margin-top: 2em; /* 30 / 15 */
+  }
+}

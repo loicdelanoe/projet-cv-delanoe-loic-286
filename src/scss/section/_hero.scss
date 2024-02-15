@@ -1,0 +1,46 @@
+@import '../var';
+
+.hero {
+  padding: 160px 15px 120px 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), url("../../../img/hero-background.jpg");
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  background-attachment: scroll;
+  border-bottom: 1px solid $gray;
+
+  &__title {
+    font-size: 44px;
+    margin-bottom: 40px;
+    line-height: 1.15em;
+  }
+}
+
+@media screen and (width > $med_screen) {
+  .hero {
+    &__title {
+      width: 60%;
+    }
+  }
+  
+}
+
+@media screen and (width > $wide_screen) {
+  .base-container {
+    max-width: 1020px;
+    padding: 0 15px;
+    margin: auto;
+  }
+
+  .hero {
+    justify-content: center;
+    min-height: 100vh;
+
+    &__title {
+      font-size: 62px;
+    }
+  }
+}

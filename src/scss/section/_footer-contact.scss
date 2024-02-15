@@ -1,0 +1,33 @@
+@import '../var';
+
+.footer__contact {
+  padding-top: 0;
+
+  & h3 {
+    font-size: 32px;
+    width: 10em;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid $gray;
+    border-radius: 7px;
+    row-gap: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../../img/map.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    & p {
+      width: 20em;
+    }
+
+    & a:last-child {
+      margin-top: 10px;
+    }
+  }
+}
