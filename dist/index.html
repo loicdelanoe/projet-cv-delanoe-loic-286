@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap"
           rel="stylesheet">
     <title>Loïc D. - SCSS</title>
-  <script type="module" crossorigin src="/assets/index-aUdUt9vJ.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-BkvJW1vx.css">
+  <script type="module" crossorigin src="/assets/index-CkMcN4fv.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C8_WPP7o.css">
 </head>
 <body>
 <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" display="none">
@@ -20,7 +20,7 @@
 </svg>
 <header>
     <h1 class="hidden">Accueil</h1>
-    <nav class="nav">
+    <nav class="nav base-container">
         <h2 class="hidden">Navigation principale</h2>
         <a class="nav__title" href="/">Loïc D.</a>
         <label class="hidden" for="burger__toggle">Menu dépliant</label>
@@ -103,7 +103,7 @@
     </section>
     <section id="about" class="about section">
         <h2 class="hidden" data-animation="showUp">À Propos</h2>
-        <article class="about__info">
+        <article class="about__info base-container">
             <h2 class="hidden" data-animation="showUp">Un peu plus sur moi</h2>
             <div id="profile" class="img">
                 <img class="img__main" src="/assets/cv-site-DgT0cZwj.jpg"
@@ -115,7 +115,7 @@
                      data-animation="scaleUp">
             </div>
             <div class="about__wrapper">
-                <h3 class="title" data-animation="showUp">Étudiant en développement Web</h3>
+                <h3 class="title" data-animation="showUp">Étudiant en Développement Web</h3>
                 <p data-animation="showUp">Depuis mon adolescence,&nbsp;je suis passionné de web et de
                     programmation.&nbsp;Ma détermination m’incite à
                     persévérer sur chaque projet,&nbsp;sans jamais abandonner.</p>
@@ -123,9 +123,9 @@
             </div>
         </article>
     </section>
-    <section id="opinion" class="opinion section">
+    <section id="opinion" class="opinion">
         <h2 class="hidden">Ma façon de travailler</h2>
-        <article class="opinion__wrapper">
+        <article class="opinion__wrapper base-container">
             <h2 class="title" data-animation="showUp">Ce qui est important pour moi</h2>
             <p data-animation="showUp">Pour moi,&nbsp;un bon développeur Web est une personne à l’écoute de ses clients,&nbsp;qui
                 fournit un design soigné et
@@ -155,13 +155,13 @@
         </article>
     </section>
     <section class="skill section">
-        <h2 id="skills" class="title" data-animation="showUp">Mes principales compétences</h2>
+        <h2 id="skills" class="title" data-animation="showUp">Mes Principales Compétences</h2>
         <p data-animation="showUp">Mes études m’ont donné les compétences essentielles pour le métier de développeur
             web.&nbsp;En voici 3 d’entres
             elles.</p>
-        <article class="skill__wrapper">
+        <article class="skill__wrapper base-container">
             <h3 class="hidden">Les compétences que j'ai aqcuis</h3>
-            <div class="skills-img-wrapper">
+            <div class="skill__img">
                 <img src="/assets/skill-img-update-BpACp-3V.jpg" alt="code HTML dans un éditeur de texte" data-animation="scaleUp"
                      width="1600" height="836">
             </div>
@@ -187,11 +187,11 @@
         </article>
     </section>
     <section class="formation section">
-        <h2 id="formation" class="title" data-animation="showUp">Mes formations</h2>
+        <h2 id="formation" class="title" data-animation="showUp">Mes Formations</h2>
         <p data-animation="showUp">Les formations que j’ai suivies ont été fondamentales pour définir ma voie
             professionnelle.&nbsp;Elles m’ont
             offert la clarté nécessaire pour trouver ma passion et déterminer la voie que je voulais suivre.</p>
-        <ul class="formation__list">
+        <ul class="formation__list base-container">
             <li id="eco" class="formation__list__card" data-animation="showUp">
                 <h3 class="formation__list__card__title">Licence Économie</h3>
                 <small>Option Gestion</small>
@@ -232,16 +232,18 @@
     </section>
     <section class="footer__contact section">
         <h2 class="hidden">Me contacter</h2>
-        <article class="footer__contact__list" data-animation="showUp">
-            <h3>Mon profil vous intéresse&nbsp;?</h3>
-            <p>N’hésitez pas à me contacter par mail,&nbsp;GSM,&nbsp;ou via le formulaire.</p>
-            <a href="#footerContact" class="cta primary">Contactez moi</a>
-        </article>
+        <div class="base-container">
+            <article class="footer__contact__list" data-animation="showUp">
+                <h3>Mon profil vous intéresse&nbsp;?</h3>
+                <p>N’hésitez pas à me contacter par mail,&nbsp;GSM,&nbsp;ou via le formulaire.</p>
+                <a href="#footerContact" class="cta primary">Contactez moi</a>
+            </article>
+        </div>
     </section>
 </main>
 <footer>
     <h2 class="hidden">Footer</h2>
-    <nav class="footer__nav">
+    <nav class="footer__nav base-container">
         <h3><a class="nav__title footer__nav__title" href="#" title="Retour à la page d'accueil">Loïc D.</a></h3>
         <ul class="footer__nav__list">
             <li><a href="#">Accueil</a></li>
@@ -256,7 +258,7 @@
             <li><a href="https://www.twitter.com" class="social__button twitter">Twitter</a></li>
         </ul>
     </nav>
-    <ul class="contact__list footer">
+    <ul class="contact__list footer base-container">
         <li>
             <h3>Contact</h3>
             <address>Téléphone&nbsp;:&nbsp;
