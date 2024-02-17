@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  outline: 1px solid $white;
 }
 
 body {
@@ -11,6 +12,11 @@ body {
 address {
   font-family: "DM Sans", sans-serif;
   color: $light_gray;
+}
+
+img {
+  width: 100%;
+  margin: 0;
 }
 
 h1, h2, h3 {
@@ -55,7 +61,6 @@ input[type="email"] {
   }
 
   &:focus {
-    outline: none;
     border-bottom: 1px solid $white;
   }
 }
@@ -130,4 +135,33 @@ section {
 
 .no-opacity {
   opacity: 0;
+}
+
+@media screen and (width > $med_screen) {
+  section {
+    padding: 80px 15px;
+  }
+}
+
+@media screen and (width > $wide_screen) {
+  section {
+    padding: 80px 0;
+  }
+
+  .base-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 42px;
+  }
+}
+
+@media screen and (width > $wider_screen) {
+  section {
+    padding: 130px 0;
+  }
 }

@@ -40,4 +40,80 @@
   }
 }
 
+@media screen and (width > $med_screen) {
+  .opinion {
+    &__wrapper {
+      align-items: center;
+
+      & > h2 {
+        width: 50%;
+      }
+
+      & > p {
+        margin-bottom: 80px;
+      }
+
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        grid-column-gap: 20px;
+
+        & > li:last-child {
+          grid-column: span 2;
+          width: 50%;
+          justify-self: center;
+        }
+      }
+    }
+  }
+
+  .opinion__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+@media screen and (width > $wide_screen) {
+  .opinion {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 80px;
+      text-align: left;
+
+      & > h2 {
+        width: auto;
+        align-self: self-start;
+      }
+
+      & > p {
+        margin-bottom: 0;
+        margin-top: 10px;
+      }
+
+      &__list {
+        display: flex;
+        flex-direction: row;
+        grid-column: span 2;
+
+        & > li {
+          flex-basis: auto;
+        }
+
+        & > li:last-child {
+          width: auto;
+        }
+      }
+    }
+
+    &__card {
+      & > p {
+        margin: 10px 0;
+      }
+    }
+  }
+}
 

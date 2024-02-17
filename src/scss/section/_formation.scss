@@ -84,3 +84,47 @@ time {
   }
 }
 
+@media screen and (width > $med_screen) {
+  .formation {
+
+    & > p {
+      margin-bottom: 60px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      grid-column-gap: 20px;
+
+      & > li:last-child {
+        grid-column: span 2;
+        width: 50%;
+        justify-self: center;
+      }
+    }
+  }
+}
+
+@media screen and (width > $wide_screen) {
+  .formation {
+    padding-left: 0;
+    padding-right: 0;
+
+    & > p {
+      width: 50%;
+      margin: 10px 0 60px 0;
+    }
+
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
+
+      & > li:last-child {
+        width: auto;
+        grid-column: auto;
+        justify-self: auto;
+      }
+    }
+  }
+}
+

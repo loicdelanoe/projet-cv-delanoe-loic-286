@@ -21,7 +21,6 @@
   }
 }
 
-
 .contact-mail-wrapper {
   margin-bottom: 20px;
 }
@@ -29,4 +28,54 @@
 .contact-mail {
   color: $white;
   margin: 10px 0;
+}
+
+@media screen and (width > $med_screen) {
+  .contact {
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+
+      & > li:last-child {
+        grid-column: span 2;
+        width: 50%;
+        justify-self: center;
+      }
+    }
+  }
+}
+
+@media screen and (width > $wide_screen) {
+  .contact {
+    padding: 50px 0 40px 0;
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      & > li {
+        align-items: flex-start;
+      }
+
+      & address {
+        margin: 10px 0;
+      }
+
+      & > li:last-child {
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+      }
+    }
+  }
+
+  .contact-mail-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }

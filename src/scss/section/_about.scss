@@ -9,6 +9,12 @@ img {
 
 .about {
 
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__wrapper {
     width: 100%;
     display: flex;
@@ -44,6 +50,7 @@ img {
   align-items: center;
   position: relative;
   height: auto;
+  max-width: 350px;
 
   &__main {
     width: 75%;
@@ -66,5 +73,127 @@ img {
   &__third {
     bottom: 3%;
     right: 4%;
+  }
+}
+
+@media screen and (width > $med_screen) {
+  .about {
+
+    &__wrapper {
+      padding: 40px;
+    }
+  }
+
+  .img {
+    min-width: auto;
+    //width: 35%;
+    max-width: 50%;
+    position: relative;
+
+    &__main {
+      width: 100%;
+      height: auto;
+    }
+
+    &__secondary,
+    &__third {
+      width: 50%;
+    }
+
+    &__secondary {
+      left: -20%;
+    }
+
+    &__third {
+      right: -20%;
+    }
+  }
+}
+
+@media screen and (width > $wide_screen) {
+  .about {
+    &__info {
+      flex-direction: row;
+      //column-gap: 60px;
+      position: relative;
+
+      &:after {
+        position: absolute;
+        content: '';
+        //width: 100%;
+        left: 15px; /* 15 / 16 */
+        right: 15px; /* 15 / 16 */
+        border-radius: 7px;
+        top: 3.75em; /* 60 / 16 */
+        bottom: 3.75em; /* 60 / 16 */
+        border: 1px solid $gray;
+        z-index: -1;
+      }
+    }
+
+    &__wrapper {
+      width: 50%;
+      //padding: 0;
+      text-align: left;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0 25px 0 60px;
+    }
+  }
+
+  .img {
+    height: 650px;
+    object-fit: cover;
+    margin-left: 40px;
+
+    &__main {
+      width: 100%;
+      min-height: 100%;
+    }
+
+    &__secondary,
+    &__third {
+      width: 43%;
+      height: auto;
+    }
+
+    &__secondary {
+      left: -9%;
+    }
+
+    &__third {
+      right: -7%;
+    }
+  }
+
+}
+
+@media screen and (width > $wider_screen) {
+  .about {
+    &__info {
+
+    }
+
+    &__wrapper {
+      padding: 0 25px 0 90px;
+    }
+  }
+
+  .img {
+    margin-left: 80px;
+
+    &__secondary,
+    &__third {
+      width: auto;
+    }
+
+    &__secondary {
+      left: -24%;
+      top: 10%;
+    }
+
+    &__third {
+      right: -17%;
+    }
   }
 }

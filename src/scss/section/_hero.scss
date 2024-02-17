@@ -9,7 +9,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), url("../../../img/hero-background.jpg");
   background-position: 0 0, 50%;
   background-size: auto, cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   border-bottom: 1px solid $gray;
 
   &__title {
@@ -21,7 +21,10 @@
 
 @media screen and (width > $med_screen) {
   .hero {
+    padding: 160px 15px 80px 15px;
+
     &__title {
+      font-size: 48px;
       width: 60%;
     }
   }
@@ -41,6 +44,14 @@
 
     &__title {
       font-size: 62px;
+    }
+  }
+}
+
+@media screen and (width > $wider_screen) {
+  .hero {
+    &__title {
+      font-size: 70px;
     }
   }
 }

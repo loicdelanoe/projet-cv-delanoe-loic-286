@@ -15,6 +15,8 @@ header {
   position: absolute;
   right: 0;
   left: 0;
+  border-bottom: 1px solid #282828;
+
 }
 
 .nav {
@@ -22,7 +24,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 15px;
-  border-bottom: 1px solid #282828;
 
   &__title {
     font-size: 32px;
@@ -105,6 +106,10 @@ header {
     font-size: 15px;
     padding: 10px 0;
     width: 100%;
+
+    &:focus-within {
+      color: $light_gray;
+    }
   }
 }
 
@@ -251,5 +256,11 @@ input[id="burger__toggle"] {
   input[id="burger__toggle"],
   div.burger__wrapper {
     display: none;
+  }
+}
+
+@media screen and (width > $wider_screen) {
+  .nav__list__link {
+    padding: 30px 20px;
   }
 }

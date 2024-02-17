@@ -23,11 +23,37 @@
     background-position: center;
 
     & p {
+      font-size: 16px;
       width: 20em;
     }
 
     & a:last-child {
       margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (width > $med_screen) {
+  .footer__contact {
+
+    &__list {
+      align-items: flex-start;
+      text-align: left;
+      padding: 40px;
+      background-position: right;
+      background-size: contain;
+
+      & > h3 {
+        font-size: 34px;
+      }
+    }
+  }
+}
+
+@media screen and (width > $wider_screen) {
+  .footer__contact {
+    &__list {
+      padding: 60px 80px;
     }
   }
 }
