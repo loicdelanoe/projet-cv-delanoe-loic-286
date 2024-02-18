@@ -47,6 +47,27 @@
   border: 1px solid $white;
   border-radius: 7px;
   transition: .3s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+
+  &:hover,
+  &:focus-within {
+    filter: opacity(0.7);
+  }
+}
+
+.facebook {
+  background-image: url("../../img/icons/facebook.svg");
+}
+
+.instagram {
+  background-image: url("../../img/icons/instagram.svg");
+}
+
+.twitter {
+  background-image: url("../../img/icons/twitter.svg");
+  background-size: 85%;
 }
 
 footer form {

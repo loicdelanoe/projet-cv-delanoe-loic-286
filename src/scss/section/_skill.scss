@@ -3,6 +3,11 @@
   padding-left: 15px;
   border-bottom: none;
 
+  & > h2 {
+    min-width: 420px;
+    max-width: 500px;
+  }
+
   & > p {
     font-size: 18px;
     margin-bottom: 40px;
@@ -23,11 +28,12 @@
         font-size: 1.75em;
         display: inline-flex;
         align-items: center;
-        column-gap: 20px;
+        column-gap: 15px;
 
         &::before {
-          content: '✓';
+          content: url("../../img/icons/check.svg");
           font-size: 20px;
+          width: 28px;
           line-height: 1em;
           font-family: "Fa solid 900", sans-serif;
           display: inline-block;
@@ -39,9 +45,6 @@
 
 @media screen and (width > $med_screen) {
   .skill {
-    & > h2 {
-      width: 50%;
-    }
 
     & > p,
     &__img {
@@ -96,3 +99,11 @@
     }
   }
 }
+//
+//@media screen and (width > $wider_screen) {
+//  .skill {
+//    & > h2 {
+//      width: 30%;
+//    }
+//  }
+//}

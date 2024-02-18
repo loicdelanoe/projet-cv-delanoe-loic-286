@@ -19,7 +19,8 @@
   background-color: $white;
   font-weight: 500;
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     background-color: transparent;
     color: $white;
   }
@@ -29,7 +30,8 @@
   color: $white;
   border: 1px solid white;
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     color: $black;
     background-color: $white;
   }
@@ -39,10 +41,10 @@
   color: $white;
   background-color: $black;
   border: 1px solid $black;
-}
 
-.third:hover {
-  color: black;
-  background-color: $white;
-  border: 1px solid $black;
+  &:hover,
+  &:focus-within {
+    color: black;
+    background-color: $white;
+  }
 }

@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap"
           rel="stylesheet">
     <title>Loïc D. - SCSS</title>
-  <script type="module" crossorigin src="/assets/index-CkMcN4fv.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-C8_WPP7o.css">
+  <script type="module" crossorigin src="/assets/index-BcXWOe8o.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BrYgUF0-.css">
 </head>
 <body>
 <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" display="none">
@@ -23,8 +23,8 @@
     <nav class="nav base-container">
         <h2 class="hidden">Navigation principale</h2>
         <a class="nav__title" href="/">Loïc D.</a>
-        <label class="hidden" for="burger__toggle">Menu dépliant</label>
         <input type="checkbox" name="burger-toggle" id="burger__toggle">
+        <label class="hidden" for="burger__toggle">Menu dépliant</label>
         <div class="burger__wrapper">
             <span></span>
             <span></span>
@@ -69,11 +69,11 @@
     </nav>
 </header>
 <main>
-    <section id="hero" class="hero" itemtype="https://schema.org/Person">
+    <section id="hero" class="hero" itemscope itemtype="https://schema.org/Person">
         <h2 class="hero__title" data-animation="showUp">
             <span itemprop="name">Loïc</span> <span itemprop="familyName">Delanoë</span>, Développeur Web
         </h2>
-        <a href="/" class="cta primary" title="En savoir plus sur moi" data-animation="showUp">Découvrez moi</a>
+        <a href="#about" class="cta primary" title="En savoir plus sur moi" data-animation="showUp">Découvrez moi</a>
     </section>
     <section id="contact" class="contact">
         <ul class="contact__list base-container">
@@ -167,7 +167,9 @@
             </div>
             <ul class="skill__list">
                 <li id="htmlSkill" data-animation="showUp">
-                    <h3 class="skill__wrapper__list__title"><abbr title="HyperText Markup Language">HTML</abbr></h3>
+                    <h3 class="skill__wrapper__list__title">
+                        <abbr title="HyperText Markup Language">HTML</abbr>
+                    </h3>
                     <p>Je veille aux bonnes pratiques en <abbr title="HyperText Markup Language">HTML</abbr>,&nbsp;priorisant
                         l’accessibilité et la sémantique.</p>
                 </li>
@@ -253,7 +255,9 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <ul class="social__list">
-            <li><a href="https://www.facebook.com" class="social__button facebook">Facebook</a></li>
+            <li>
+                <a href="https://www.facebook.com" class="social__button facebook">Facebook</a>
+            </li>
             <li><a href="https://www.instagram.com" class="social__button instagram">Instagram</a></li>
             <li><a href="https://www.twitter.com" class="social__button twitter">Twitter</a></li>
         </ul>
