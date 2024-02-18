@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap"
           rel="stylesheet">
@@ -12,12 +12,6 @@
   <link rel="stylesheet" crossorigin href="/assets/index-BrYgUF0-.css">
 </head>
 <body>
-<svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" display="none">
-    <symbol id="check">
-        <polyline points="6,11 15,20 30,5" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"
-                  stroke-linecap="round"/>
-    </symbol>
-</svg>
 <header>
     <h1 class="hidden">Accueil</h1>
     <nav class="nav base-container">
@@ -31,39 +25,39 @@
             <span></span>
         </div>
         <ul class="nav__list">
-            <li><a class="nav__list__link" href="/">Accueil</a></li>
+            <li><a class="nav__list__link" href="/" role="button" title="Aller sur la page d'accueil">Accueil</a></li>
             <li class="nav__list__wrapper">
-                <span class="nav__list__link" tabindex="0">À Propos</span>
+                <span class="nav__list__link" tabindex="0" role="button" aria-haspopup="true">À Propos</span>
                 <div class="sub__list__wrapper">
                     <ul class="sub__list">
-                        <li><a class="sub__list__link" href="#coordonnees">Coordonnées</a></li>
-                        <li><a class="sub__list__link" href="#profile">Mon Profil</a></li>
+                        <li><a class="sub__list__link" href="#coordonnees" title="Aller au contenu mes coordonées">Coordonnées</a></li>
+                        <li><a class="sub__list__link" href="#profile " title="Aller au contenu mon profil">Mon Profil</a></li>
                     </ul>
                 </div>
             </li>
             <li class="nav__list__wrapper">
-                <span class="nav__list__link" tabindex="0">Compétences</span>
+                <span class="nav__list__link" tabindex="0" role="button" aria-haspopup="true">Compétences</span>
                 <div class="sub__list__wrapper">
                     <ul class="sub__list">
-                        <li><a class="sub__list__link" href="">HTML</a></li>
-                        <li><a class="sub__list__link" href="">CSS</a></li>
-                        <li><a class="sub__list__link" href="">JavaScript</a></li>
+                        <li><a class="sub__list__link" href="" title="Aller au contenu HTML">HTML</a></li>
+                        <li><a class="sub__list__link" href="" title="Aller au contenu CSS">CSS</a></li>
+                        <li><a class="sub__list__link" href="" title="Aller au contenu JavaScript">JavaScript</a></li>
                     </ul>
                 </div>
             </li>
             <li class="nav__list__wrapper">
-                <span class="nav__list__link" tabindex="0">Formations</span>
+                <span class="nav__list__link" tabindex="0" role="button" aria-haspopup="true">Formations</span>
                 <div class="sub__list__wrapper">
                     <ul class="sub__list">
-                        <li><a class="sub__list__link" href="">Baccalauréat</a></li>
-                        <li><a class="sub__list__link" href="">Économie</a></li>
-                        <li><a class="sub__list__link" href="">Web</a></li>
+                        <li><a class="sub__list__link" href="" title="Aller au contenu mes formations">Baccalauréat</a></li>
+                        <li><a class="sub__list__link" href="" title="Aller au contenu mes formations">Économie</a></li>
+                        <li><a class="sub__list__link" href="" title="Aller au contenu mes formations">Web</a></li>
                     </ul>
                 </div>
             </li>
             <li>
-                <a class="cta secondary" href="">Blog</a>
-                <a class="cta primary" href="">Contact</a>
+                <a class="cta secondary" href="" role="button" title="Consulter mon portfolio">Portfolio</a>
+                <a class="cta primary" href="" role="button" title="Aller au contenu me contacter">Contact</a>
             </li>
         </ul>
     </nav>
@@ -246,7 +240,7 @@
 <footer>
     <h2 class="hidden">Footer</h2>
     <nav class="footer__nav base-container">
-        <h3><a class="nav__title footer__nav__title" href="#" title="Retour à la page d'accueil">Loïc D.</a></h3>
+        <h3><a class="nav__title footer__nav__title" href="#" title="Retour à la page d'accueil" role="button">Loïc D.</a></h3>
         <ul class="footer__nav__list">
             <li><a href="#">Accueil</a></li>
             <li><a href="#about">À Propos</a></li>
