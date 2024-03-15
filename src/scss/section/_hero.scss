@@ -8,8 +8,8 @@
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), url("/img/hero-background.jpg");
   background-position: 0 0, 50%;
-  background-size: auto, cover;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-bottom: 1px solid $gray;
 
   &__title {
@@ -23,6 +23,7 @@
 @media screen and (width > $med_screen) {
   .hero {
     padding: 160px 15px 80px 15px;
+    background-attachment: fixed;
 
     &__title {
       font-size: 48px;

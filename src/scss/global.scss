@@ -2,7 +2,7 @@
 
 html {
   scroll-behavior: smooth;
-  outline: 1px solid $white;
+  overflow-x: hidden;
 }
 
 body {
@@ -45,15 +45,20 @@ a {
   }
 }
 
+textarea {
+  font-family: DM Sans, sans-serif;
+}
+
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
   font-size: 1em;
   background: transparent;
-  border: none;
   border-bottom-color: currentcolor;
-  border-bottom: 1px solid $gray;
+  border: 1px solid $gray;
   color: $white;
-  padding: .938em 0;
+  border-radius: 7px;
+  padding: .938em 1em;
 
   &::placeholder {
     font-size: 1em; /* 16px */
@@ -61,8 +66,12 @@ input[type="email"] {
   }
 
   &:focus {
-    border-bottom: 1px solid $white;
+    border: 1px solid $white;
   }
+}
+
+label[for="message"] {
+  margin-bottom: 10px;
 }
 
 .hidden {

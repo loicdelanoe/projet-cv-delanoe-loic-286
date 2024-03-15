@@ -31,7 +31,7 @@
                 <div class="sub__list__wrapper">
                     <ul class="sub__list">
                         <li><a class="sub__list__link" href="#coordonnees" title="Aller au contenu mes coordonées">Coordonnées</a></li>
-                        <li><a class="sub__list__link" href="#profile " title="Aller au contenu mon profil">Mon Profil</a></li>
+                        <li><a class="sub__list__link" href="#profile" title="Aller au contenu mon profil">Mon Profil</a></li>
                     </ul>
                 </div>
             </li>
@@ -39,9 +39,9 @@
                 <span class="nav__list__link" tabindex="0" role="button" aria-haspopup="true">Compétences</span>
                 <div class="sub__list__wrapper">
                     <ul class="sub__list">
-                        <li><a class="sub__list__link" href="" title="Aller au contenu HTML">HTML</a></li>
-                        <li><a class="sub__list__link" href="" title="Aller au contenu CSS">CSS</a></li>
-                        <li><a class="sub__list__link" href="" title="Aller au contenu JavaScript">JavaScript</a></li>
+                        <li><a class="sub__list__link" href="#skills" title="Aller au contenu HTML">HTML</a></li>
+                        <li><a class="sub__list__link" href="#skills" title="Aller au contenu CSS">CSS</a></li>
+                        <li><a class="sub__list__link" href="#skills" title="Aller au contenu JavaScript">JavaScript</a></li>
                     </ul>
                 </div>
             </li>
@@ -49,15 +49,15 @@
                 <span class="nav__list__link" tabindex="0" role="button" aria-haspopup="true">Formations</span>
                 <div class="sub__list__wrapper">
                     <ul class="sub__list">
-                        <li><a class="sub__list__link" href="" title="Aller au contenu mes formations">Baccalauréat</a></li>
-                        <li><a class="sub__list__link" href="" title="Aller au contenu mes formations">Économie</a></li>
-                        <li><a class="sub__list__link" href="" title="Aller au contenu mes formations">Web</a></li>
+                        <li><a class="sub__list__link" href="#formation" title="Aller au contenu mes formations">Baccalauréat</a></li>
+                        <li><a class="sub__list__link" href="#formation" title="Aller au contenu mes formations">Économie</a></li>
+                        <li><a class="sub__list__link" href="#formation" title="Aller au contenu mes formations">Web</a></li>
                     </ul>
                 </div>
             </li>
             <li>
-                <a class="cta secondary" href="" role="button" title="Consulter mon portfolio">Portfolio</a>
-                <a class="cta primary" href="" role="button" title="Aller au contenu me contacter">Contact</a>
+                <a class="cta secondary" href="https://loicdelanoe.com" role="button" title="Consulter mon portfolio">Portfolio</a>
+                <a class="cta primary" href="#footerContact" role="button" title="Aller au formulaire de contact">Contact</a>
             </li>
         </ul>
     </nav>
@@ -91,7 +91,7 @@
                     <a href="mailto:loic.del4127@gmail.com" itemprop="email"
                        class="contact-mail">loic.del4127@gmail.com</a>
                 </div>
-                <a href="/" class="cta primary">Contactez moi</a>
+                <a href="#footerContact" title="Aller au formulaire de contact" class="cta primary">Contactez moi</a>
             </li>
         </ul>
     </section>
@@ -273,11 +273,13 @@
         </li>
         <li>
             <form id="footerContact" action="#" method="POST">
-                <h3>Envoyez moi un mail&nbsp;!</h3>
-                <label for="footerName">Nom</label>
-                <input type="text" name="name" id="footerName" placeholder="Votre nom..." autocomplete="true">
-                <label for="footerEmail">Email</label>
-                <input type="email" name="email" id="footerEmail" placeholder="Votre mail..." autocomplete="true">
+                <h3>Envoyez moi un mail</h3>
+                <label for="footerName">Nom :</label>
+                <input type="text" name="name" id="footerName" placeholder="Patrick Dupont..." autocomplete="true">
+                <label for="footerEmail">Email :</label>
+                <input type="email" name="email" id="footerEmail" placeholder="patrick.dupont@example.com..." autocomplete="true">
+                <label for="message">Message :</label>
+                <textarea cols="30" id="message" name="message" rows="10" placeholder="Je veux travailler avec vous..."></textarea>
                 <button type="submit" class="cta primary">Contactez moi</button>
             </form>
         </li>

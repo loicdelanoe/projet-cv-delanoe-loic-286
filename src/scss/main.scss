@@ -60,6 +60,11 @@ header {
       grid-template-rows: 1fr;
     }
 
+    &__wrapper:hover .nav__list__link,
+    &__wrapper:focus-within .nav__list__link {
+    color: $light_gray;
+    }
+
     &__wrapper:hover &__link:after {
       transform: rotate(0);
     }
@@ -79,6 +84,7 @@ header {
       align-items: center;
       font-size: 18px;
       cursor: pointer;
+      transition: .3s;
 
       &:after {
         content: url("../../img/arrow-menu.svg");
@@ -120,13 +126,11 @@ input[id="burger__toggle"] {
   display: inline-block;
   min-width: 30px;
   min-height: 30px;
-  //background-color: $white;
   cursor: pointer;
   z-index: 3;
 
   &:checked,
   &:checked ~ .burger__wrapper {
-    //background-color: red;
     position: fixed;
     right: 15px;
   }
